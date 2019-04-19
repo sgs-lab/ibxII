@@ -1,0 +1,3042 @@
+EESchema Schematic File Version 4
+LIBS:Apple2_bus
+LIBS:ibx
+EELAYER 26 0
+EELAYER END
+$Descr USLedger 17000 11000
+encoding utf-8
+Sheet 1 2
+Title "IBX ][ - Gamma Spectroscopy Peripheral Card"
+Date "2017-11-28"
+Rev "1"
+Comp "Princeton University"
+Comment1 "Open Source Hardware"
+Comment2 "Development: Moritz Kütt (kuett@princeton.edu)"
+Comment3 "12 Bit"
+Comment4 ""
+$EndDescr
+Entry Wire Line
+	8320 3420 8420 3520
+Entry Wire Line
+	8420 3420 8520 3520
+Entry Wire Line
+	8520 3420 8620 3520
+Text Label 8320 3270 1    60   ~ 0
+A0
+Text Label 8420 3270 1    60   ~ 0
+A1
+Text Label 8520 3270 1    60   ~ 0
+A2
+Text Label 7870 3520 0    35   ~ 0
+A[0..2]
+Text GLabel 7775 3520 0    35   Input ~ 0
+A[0..2]
+NoConn ~ 9020 1970
+NoConn ~ 8920 1970
+NoConn ~ 8820 1970
+Text GLabel 6255 4690 2    35   Input ~ 0
+~Armed
+Text GLabel 7185 8390 2    60   Output ~ 0
+~BufferOE
+Entry Wire Line
+	12055 8675 12155 8775
+Entry Wire Line
+	12055 8775 12155 8875
+Entry Wire Line
+	12055 8875 12155 8975
+Entry Wire Line
+	12055 8975 12155 9075
+Entry Wire Line
+	12055 9075 12155 9175
+Entry Wire Line
+	12055 9175 12155 9275
+Entry Wire Line
+	12055 9275 12155 9375
+Entry Wire Line
+	12055 9375 12155 9475
+Entry Wire Line
+	11505 6325 11605 6425
+Entry Wire Line
+	11505 6425 11605 6525
+Entry Wire Line
+	11505 6525 11605 6625
+Entry Wire Line
+	11505 6625 11605 6725
+Entry Wire Line
+	11505 6725 11605 6825
+Entry Wire Line
+	11505 6825 11605 6925
+Entry Wire Line
+	11505 6925 11605 7025
+Entry Wire Line
+	11505 7025 11605 7125
+Text Label 11905 9375 0    60   ~ 0
+D0
+Text Label 11905 9275 0    60   ~ 0
+D1
+Text Label 11905 9175 0    60   ~ 0
+D2
+Text Label 11905 9075 0    60   ~ 0
+D3
+Text Label 11905 8975 0    60   ~ 0
+D4
+Text Label 11905 8875 0    60   ~ 0
+D5
+Text Label 11905 8775 0    60   ~ 0
+D6
+Text Label 11905 8675 0    60   ~ 0
+D7
+Text Label 11355 6325 0    60   ~ 0
+D0
+Text Label 11355 6425 0    60   ~ 0
+D1
+Text Label 11355 6525 0    60   ~ 0
+D2
+Text Label 11355 6625 0    60   ~ 0
+D3
+Text Label 11355 6725 0    60   ~ 0
+D4
+Text Label 11355 6825 0    60   ~ 0
+D5
+Text Label 11355 6925 0    60   ~ 0
+D6
+Text Label 11355 7025 0    60   ~ 0
+D7
+NoConn ~ 10305 9875
+Text GLabel 10130 7275 1    60   Input ~ 0
+~BufferOE
+Text GLabel 10355 6325 0    35   Input ~ 0
+~Armed
+Text GLabel 13745 3610 2    60   Output ~ 0
+RD
+Text GLabel 10700 3860 0    60   Input ~ 0
+Phi1
+Text GLabel 10700 3510 0    60   Input ~ 0
+R/~W
+Text GLabel 6235 7095 0    60   Input ~ 0
+RD
+Text GLabel 6235 7445 0    60   Input ~ 0
+O1
+Text GLabel 6235 7795 0    60   Input ~ 0
+O2
+Text GLabel 6235 8145 0    60   Input ~ 0
+O3
+Text GLabel 6235 8490 0    60   Input ~ 0
+O4
+Text GLabel 10275 1775 2    60   Output ~ 0
+O2
+Text GLabel 10275 2115 2    60   Output ~ 0
+O3
+Text GLabel 10275 2455 2    60   Output ~ 0
+O4
+Entry Wire Line
+	4595 3445 4695 3345
+Entry Wire Line
+	4795 3445 4895 3345
+Entry Wire Line
+	4995 3445 5095 3345
+Entry Wire Line
+	5195 3445 5295 3345
+Entry Wire Line
+	5395 3445 5495 3345
+Entry Wire Line
+	5595 3445 5695 3345
+Entry Wire Line
+	5795 3445 5895 3345
+Entry Wire Line
+	5995 3445 6095 3345
+Text Label 6095 3345 1    60   ~ 0
+D0
+Text Label 5895 3345 1    60   ~ 0
+D1
+Text Label 5695 3345 1    60   ~ 0
+D2
+Text Label 5495 3345 1    60   ~ 0
+D3
+Text Label 5295 3345 1    60   ~ 0
+D4
+Text Label 5095 3345 1    60   ~ 0
+D5
+Text Label 4895 3345 1    60   ~ 0
+D6
+Text Label 4695 3345 1    60   ~ 0
+D7
+NoConn ~ 3495 3145
+NoConn ~ 3695 3145
+NoConn ~ 4095 3145
+NoConn ~ 4295 3145
+NoConn ~ 6295 1545
+NoConn ~ 1695 1545
+NoConn ~ 1895 1545
+NoConn ~ 2095 1545
+NoConn ~ 2295 1545
+NoConn ~ 2495 1545
+NoConn ~ 1695 3145
+NoConn ~ 1895 3145
+NoConn ~ 2095 3145
+NoConn ~ 2295 3145
+NoConn ~ 2495 3145
+NoConn ~ 2695 3145
+Text GLabel 3895 3745 3    60   Output ~ 0
+Phi1
+Text GLabel 4495 3745 3    60   Output ~ 0
+~DevSel
+Text GLabel 2895 1545 1    60   Output ~ 0
+R/~W
+Entry Wire Line
+	5695 1370 5795 1270
+Entry Wire Line
+	5895 1370 5995 1270
+Entry Wire Line
+	6095 1370 6195 1270
+Text Label 6095 1420 3    60   ~ 0
+A0
+Text Label 5895 1420 3    60   ~ 0
+A1
+Text Label 5695 1420 3    60   ~ 0
+A2
+Text GLabel 6095 3945 3    60   BiDi ~ 0
+D[0..7]
+NoConn ~ 5295 1545
+NoConn ~ 5095 1545
+NoConn ~ 4895 1545
+NoConn ~ 4695 1545
+NoConn ~ 4495 1545
+NoConn ~ 4295 1545
+NoConn ~ 4095 1545
+NoConn ~ 3895 1545
+NoConn ~ 3695 1545
+NoConn ~ 3495 1545
+NoConn ~ 3095 1545
+NoConn ~ 3295 1545
+NoConn ~ 5495 1545
+Text GLabel 4745 1270 0    60   Input ~ 0
+A[0..2]
+Text Label 4910 1270 0    35   ~ 0
+A[0..2]
+Text Label 5265 3445 0    35   ~ 0
+D[0..7]
+Text GLabel 7770 3820 0    60   Input ~ 0
+~DevSel
+Text GLabel 11605 6050 1    60   Output ~ 0
+D[0..7]
+Wire Wire Line
+	8530 4245 8820 4245
+Wire Wire Line
+	8920 2970 8920 3945
+Wire Wire Line
+	10700 3860 11175 3860
+Wire Wire Line
+	11910 3710 11910 3860
+Wire Wire Line
+	11775 3860 11910 3860
+Wire Wire Line
+	7920 2470 8020 2470
+Wire Wire Line
+	7920 2320 7920 2470
+Wire Wire Line
+	8820 2970 8820 3945
+Wire Wire Line
+	8320 2970 8320 3420
+Wire Wire Line
+	8420 2970 8420 3420
+Wire Wire Line
+	8520 2970 8520 3420
+Wire Wire Line
+	9020 3820 9020 2970
+Connection ~ 7920 2470
+Wire Wire Line
+	8420 1435 8420 1970
+Wire Wire Line
+	8420 1435 9675 1435
+Wire Wire Line
+	8520 1635 8520 1970
+Wire Wire Line
+	8520 1635 9675 1635
+Wire Wire Line
+	9675 1635 9675 1775
+Wire Wire Line
+	8620 1725 8620 1970
+Wire Wire Line
+	8620 1725 9595 1725
+Wire Wire Line
+	9595 1725 9595 2115
+Wire Wire Line
+	9595 2115 9675 2115
+Wire Wire Line
+	8720 1815 8720 1970
+Wire Wire Line
+	8720 1815 9505 1815
+Wire Wire Line
+	9505 1815 9505 2455
+Wire Wire Line
+	9505 2455 9675 2455
+Wire Wire Line
+	15515 6660 15260 6660
+Connection ~ 15260 6660
+Wire Wire Line
+	2105 8930 2820 8930
+Wire Wire Line
+	3420 9030 3630 9030
+Wire Wire Line
+	3630 9180 3630 9030
+Connection ~ 3630 9030
+Wire Wire Line
+	4020 9030 4120 9030
+Wire Wire Line
+	4420 9030 4520 9030
+Wire Wire Line
+	4120 9030 4120 9170
+Connection ~ 4120 9030
+Wire Wire Line
+	4430 9250 4430 9170
+Wire Wire Line
+	4430 9170 4120 9170
+Connection ~ 4120 9170
+Wire Wire Line
+	3630 9380 3630 9620
+Wire Wire Line
+	3630 9620 3730 9620
+Wire Wire Line
+	3930 9620 4120 9620
+Wire Wire Line
+	2480 9840 3630 9840
+Connection ~ 3630 9620
+Wire Wire Line
+	3020 9330 3020 9450
+Wire Wire Line
+	2940 9450 3020 9450
+Connection ~ 3020 9450
+Wire Wire Line
+	3300 9450 3350 9450
+Wire Wire Line
+	3350 9450 3350 9520
+Wire Wire Line
+	2740 9450 2690 9450
+Wire Wire Line
+	2690 9450 2690 9520
+Wire Wire Line
+	2820 9130 2480 9130
+Wire Wire Line
+	2480 9130 2480 9840
+Connection ~ 3630 9840
+Wire Wire Line
+	5430 9840 5675 9835
+Wire Wire Line
+	5675 9835 5775 9835
+Wire Wire Line
+	5430 9840 5430 9130
+Wire Wire Line
+	5430 9130 5330 9130
+Wire Wire Line
+	4430 9450 4430 9840
+Connection ~ 4430 9840
+Connection ~ 5430 9840
+Wire Wire Line
+	3020 8300 3020 8490
+Wire Wire Line
+	2940 8490 3020 8490
+Connection ~ 3020 8490
+Wire Wire Line
+	3300 8490 3350 8490
+Wire Wire Line
+	3350 8490 3350 8560
+Wire Wire Line
+	2740 8490 2690 8490
+Wire Wire Line
+	2690 8490 2690 8560
+Wire Wire Line
+	4400 8235 4520 8235
+Wire Wire Line
+	4200 8235 4100 8235
+Wire Wire Line
+	4100 8235 4100 8245
+Wire Wire Line
+	4730 9230 4730 9840
+Connection ~ 4730 9840
+Wire Wire Line
+	5170 7805 5340 7805
+Wire Wire Line
+	4570 7805 4520 7805
+Wire Wire Line
+	4100 8445 4100 8495
+Wire Wire Line
+	2835 6105 2835 6205
+Wire Wire Line
+	2685 6715 2635 6715
+Wire Wire Line
+	2985 6715 3035 6715
+Wire Wire Line
+	4595 5720 4775 5720
+Wire Wire Line
+	4595 5330 4595 5380
+Wire Wire Line
+	4595 5380 5075 5380
+Wire Wire Line
+	7870 5380 8300 5380
+Wire Wire Line
+	5075 5380 5075 5520
+Connection ~ 4595 5380
+Wire Wire Line
+	8300 5380 8300 5420
+Wire Wire Line
+	7870 5620 8000 5620
+Wire Wire Line
+	7870 5315 7870 5380
+Wire Wire Line
+	8660 5860 8660 5820
+Connection ~ 8660 5820
+Wire Wire Line
+	8300 6020 8300 6140
+Wire Wire Line
+	8300 6140 8660 6140
+Connection ~ 8300 6140
+Wire Wire Line
+	5375 5920 5550 5920
+Wire Wire Line
+	5550 5920 5550 7005
+Wire Wire Line
+	5485 4690 5485 5720
+Wire Wire Line
+	5335 4690 5485 4690
+Wire Wire Line
+	8660 6060 8660 6140
+Connection ~ 5485 4690
+Wire Wire Line
+	5135 4690 4985 4690
+Wire Wire Line
+	4785 4690 4725 4690
+Wire Wire Line
+	4725 4690 4725 4740
+Wire Wire Line
+	5775 9835 5775 9755
+Wire Wire Line
+	5675 9835 5675 9755
+Connection ~ 5675 9835
+Wire Wire Line
+	5875 9755 5875 10005
+Wire Wire Line
+	2775 6105 2835 6105
+Wire Wire Line
+	2775 6205 2835 6205
+Connection ~ 2835 6205
+Wire Wire Line
+	4545 5820 4660 5820
+Wire Wire Line
+	7810 5720 8000 5720
+Wire Wire Line
+	5375 5720 5485 5720
+Wire Wire Line
+	2105 6605 2105 7805
+Wire Wire Line
+	1385 7805 2105 7805
+Connection ~ 2105 7805
+Wire Wire Line
+	8900 5620 8960 5620
+Wire Wire Line
+	8600 5620 8655 5620
+Connection ~ 8655 5620
+Wire Wire Line
+	6115 4795 6115 4690
+Connection ~ 6115 4690
+Wire Wire Line
+	4660 6040 4660 5820
+Connection ~ 4660 5820
+Wire Wire Line
+	8655 5620 8655 5455
+Wire Wire Line
+	4520 7805 4520 8235
+Connection ~ 4520 9030
+Connection ~ 4520 8235
+Wire Wire Line
+	5875 10005 7410 10005
+Wire Wire Line
+	8600 5820 8660 5820
+Connection ~ 7870 5380
+Connection ~ 5485 5720
+Wire Wire Line
+	6865 5720 7010 5720
+Wire Wire Line
+	7010 6060 7010 5720
+Wire Wire Line
+	7010 6260 7010 6375
+Wire Wire Line
+	6585 7095 6585 7245
+Wire Wire Line
+	6235 7095 6435 7095
+Wire Wire Line
+	6235 7795 6585 7795
+Wire Wire Line
+	6585 7595 6435 7595
+Wire Wire Line
+	6435 7595 6435 7095
+Connection ~ 6435 7095
+Wire Wire Line
+	6235 8145 6585 8145
+Wire Wire Line
+	6585 7945 6485 7945
+Wire Wire Line
+	6485 7945 6485 7095
+Connection ~ 6485 7095
+Wire Wire Line
+	6235 8490 6585 8490
+Wire Wire Line
+	6535 7095 6535 8290
+Wire Wire Line
+	6535 8290 6585 8290
+Connection ~ 6535 7095
+Wire Wire Line
+	7185 8045 7215 8045
+Wire Wire Line
+	7185 7695 7215 7695
+Wire Wire Line
+	7215 7590 7215 7695
+Connection ~ 7215 7695
+Wire Wire Line
+	7840 7945 7815 7945
+Wire Wire Line
+	7185 6835 7185 7345
+Wire Wire Line
+	11355 8675 11480 8675
+Wire Wire Line
+	11355 8775 11580 8775
+Wire Wire Line
+	11355 8875 11680 8875
+Wire Wire Line
+	11355 8975 11780 8975
+Wire Wire Line
+	11355 9075 12055 9075
+Wire Wire Line
+	11355 9175 12055 9175
+Wire Wire Line
+	11355 9275 12055 9275
+Wire Wire Line
+	11355 9375 12055 9375
+Wire Wire Line
+	11355 8575 11455 8575
+Wire Wire Line
+	10305 9375 10230 9375
+Wire Wire Line
+	10230 9375 10230 10125
+Wire Wire Line
+	10045 10125 10135 10125
+Wire Wire Line
+	11355 9875 11355 10125
+Wire Wire Line
+	10305 9675 10135 9675
+Wire Wire Line
+	10135 9675 10135 9875
+Connection ~ 10230 10125
+Connection ~ 11355 10125
+Wire Wire Line
+	10355 7225 10355 7275
+Connection ~ 10355 7275
+Wire Wire Line
+	11455 8575 11455 7835
+Wire Wire Line
+	11455 7835 10230 7835
+Wire Wire Line
+	10230 7835 10230 6425
+Wire Wire Line
+	10230 6425 10355 6425
+Wire Wire Line
+	10355 7275 10130 7275
+Wire Wire Line
+	9805 8875 10305 8875
+Wire Wire Line
+	9680 8775 10305 8775
+Wire Wire Line
+	11355 9775 11780 9775
+Wire Wire Line
+	11355 9675 11680 9675
+Wire Wire Line
+	11355 9575 11580 9575
+Wire Wire Line
+	11355 9475 11480 9475
+Wire Bus Line
+	11605 7325 12155 7325
+Wire Wire Line
+	11480 9475 11480 8675
+Connection ~ 11480 8675
+Wire Wire Line
+	11580 9575 11580 8775
+Connection ~ 11580 8775
+Wire Wire Line
+	11680 9675 11680 8875
+Connection ~ 11680 8875
+Wire Wire Line
+	11780 9775 11780 8975
+Connection ~ 11780 8975
+Wire Wire Line
+	9650 5820 9650 6825
+Wire Wire Line
+	8440 6825 9650 6825
+Wire Wire Line
+	8440 6825 8440 7745
+Wire Wire Line
+	9680 8280 9680 8430
+Wire Wire Line
+	7815 7590 9120 7590
+Wire Wire Line
+	9805 7590 9805 8875
+Wire Wire Line
+	9040 9075 9235 9075
+Wire Wire Line
+	9040 7845 9040 8280
+Wire Wire Line
+	9080 8280 9040 8280
+Connection ~ 9040 8280
+Wire Wire Line
+	10305 8975 9920 8975
+Wire Wire Line
+	9920 8975 9920 6825
+Connection ~ 9650 6825
+Wire Wire Line
+	9680 10005 9680 9775
+Wire Wire Line
+	9680 9775 10305 9775
+Wire Wire Line
+	10045 8675 10305 8675
+Wire Wire Line
+	10045 8675 10045 9875
+Wire Wire Line
+	10135 10075 10135 10125
+Connection ~ 10135 10125
+Wire Wire Line
+	10045 10075 10045 10125
+Wire Wire Line
+	12510 3610 13145 3610
+Wire Wire Line
+	13870 6565 13870 6660
+Wire Wire Line
+	14125 6660 13870 6660
+Connection ~ 13870 6660
+Wire Wire Line
+	13415 6570 13415 6665
+Wire Wire Line
+	13670 6665 13415 6665
+Connection ~ 13415 6665
+Wire Wire Line
+	14330 6565 14330 6660
+Wire Wire Line
+	14585 6660 14330 6660
+Connection ~ 14330 6660
+Wire Wire Line
+	14795 6545 14795 6640
+Wire Wire Line
+	15050 6640 14795 6640
+Connection ~ 14795 6640
+Wire Bus Line
+	6095 3445 6095 3945
+Wire Wire Line
+	4695 3345 4695 3145
+Wire Wire Line
+	4895 3145 4895 3345
+Wire Wire Line
+	5095 3345 5095 3145
+Wire Wire Line
+	5295 3145 5295 3345
+Wire Wire Line
+	5495 3345 5495 3145
+Wire Wire Line
+	5695 3145 5695 3345
+Wire Wire Line
+	5895 3345 5895 3145
+Wire Wire Line
+	6095 3145 6095 3345
+Wire Wire Line
+	1495 3145 1495 3295
+Wire Wire Line
+	2820 3370 2820 3145
+Wire Wire Line
+	2820 3145 2895 3145
+Wire Wire Line
+	2820 3570 2820 3845
+Wire Wire Line
+	1495 1545 1495 1420
+Wire Wire Line
+	1495 1220 1495 995 
+Wire Wire Line
+	6295 3395 6295 3145
+Wire Wire Line
+	6295 3820 6295 3595
+Wire Wire Line
+	4495 3145 4495 3745
+Wire Wire Line
+	3895 3745 3895 3145
+Wire Wire Line
+	6095 1370 6095 1545
+Wire Wire Line
+	5895 1545 5895 1370
+Wire Wire Line
+	5695 1370 5695 1545
+Wire Wire Line
+	1285 7805 1285 7905
+Wire Wire Line
+	1185 7805 1185 7905
+Wire Wire Line
+	1185 7905 1285 7905
+Connection ~ 1285 7905
+Wire Wire Line
+	1285 9255 1285 9030
+Wire Wire Line
+	10155 8055 10155 8150
+Wire Wire Line
+	10280 8150 10155 8150
+Wire Wire Line
+	10550 8150 10480 8150
+Wire Wire Line
+	9120 7495 9120 7590
+Connection ~ 9120 7590
+Wire Wire Line
+	9535 8430 9680 8430
+Connection ~ 9680 8430
+Wire Wire Line
+	9235 9040 9235 9075
+Connection ~ 9235 9075
+Wire Wire Line
+	14795 7850 14795 7770
+$Sheet
+S 1170 8291 500  415 
+U 5A35FA42
+F0 "Amplifier" 60
+F1 "Amplifier.sch" 60
+F2 "SigRaw" I L 1170 8590 60 
+F3 "SigOut" O L 1170 8390 60 
+$EndSheet
+Wire Wire Line
+	1080 8030 1080 8390
+Wire Wire Line
+	1080 8390 1170 8390
+Wire Wire Line
+	1285 8030 1080 8030
+Wire Wire Line
+	1285 9030 985  9030
+Wire Wire Line
+	985  9030 985  8590
+Wire Wire Line
+	985  8590 1170 8590
+Wire Wire Line
+	7920 2470 7920 2570
+Wire Wire Line
+	15260 6660 15260 6870
+Wire Wire Line
+	3630 9030 3820 9030
+Wire Wire Line
+	4120 9030 4220 9030
+Wire Wire Line
+	4120 9170 4120 9240
+Wire Wire Line
+	4120 9620 4120 9440
+Wire Wire Line
+	3630 9620 3630 9840
+Wire Wire Line
+	3020 9450 3020 9640
+Wire Wire Line
+	3020 9450 3100 9450
+Wire Wire Line
+	3630 9840 3730 9840
+Wire Wire Line
+	4430 9840 4730 9840
+Wire Wire Line
+	3020 8490 3020 8730
+Wire Wire Line
+	3020 8490 3100 8490
+Wire Wire Line
+	4730 9840 5430 9840
+Wire Wire Line
+	4595 5380 4595 5720
+Wire Wire Line
+	8300 6140 8300 6240
+Wire Wire Line
+	5340 7805 5340 7895
+Wire Wire Line
+	5485 4690 6115 4690
+Wire Wire Line
+	8655 5620 8700 5620
+Wire Wire Line
+	6115 4690 6255 4690
+Wire Wire Line
+	4660 5820 4775 5820
+Wire Wire Line
+	4520 9030 4730 9030
+Wire Wire Line
+	4520 8235 4520 9030
+Wire Wire Line
+	7870 5380 7870 5620
+Wire Wire Line
+	5485 5720 5860 5720
+Wire Wire Line
+	6435 7095 6485 7095
+Wire Wire Line
+	6485 7095 6535 7095
+Wire Wire Line
+	6535 7095 6585 7095
+Wire Wire Line
+	7215 7695 7215 7845
+Wire Wire Line
+	10230 10125 11355 10125
+Wire Wire Line
+	11355 10125 11355 10225
+Wire Wire Line
+	10355 7275 10355 7325
+Wire Wire Line
+	11480 8675 12055 8675
+Wire Wire Line
+	11580 8775 12055 8775
+Wire Wire Line
+	11680 8875 12055 8875
+Wire Wire Line
+	11780 8975 12055 8975
+Wire Wire Line
+	9040 8280 9040 9075
+Wire Wire Line
+	9650 6825 9920 6825
+Wire Wire Line
+	10135 10125 10230 10125
+Wire Wire Line
+	13870 6660 13870 6870
+Wire Wire Line
+	13415 6665 13415 6875
+Wire Wire Line
+	14330 6660 14330 6870
+Wire Wire Line
+	14795 6640 14795 6970
+Wire Wire Line
+	1285 7905 1285 8030
+Wire Wire Line
+	9120 7590 9805 7590
+Wire Wire Line
+	9235 9075 10305 9075
+$Comp
+L Apple2_bus:A2_BUS BUS1
+U 1 1 5BBB1C32
+P 3295 3745
+F 0 "BUS1" V 4642 617 60  0000 R CNN
+F 1 "A2_BUS" V 4748 617 60  0000 R CNN
+F 2 "ibxlib:BUS_ADC" H 3295 3745 60  0001 C CNN
+F 3 "" H 3295 3745 60  0000 C CNN
+	1    3295 3745
+	0    -1   -1   0   
+$EndComp
+Wire Wire Line
+	3930 9840 4120 9840
+$Comp
+L power:GND #PWR03
+U 1 1 5BBD6942
+P 1495 3295
+F 0 "#PWR03" H 1495 3045 50  0001 C CNN
+F 1 "GND" H 1500 3122 50  0000 C CNN
+F 2 "" H 1495 3295 50  0001 C CNN
+F 3 "" H 1495 3295 50  0001 C CNN
+	1    1495 3295
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	15260 6565 15260 6660
+$Comp
+L Connector_Generic:Conn_01x03 J4
+U 1 1 5BBFC4F4
+P 5775 9555
+F 0 "J4" V 5741 9367 50  0000 R CNN
+F 1 "SigADC" V 5650 9367 50  0000 R CNN
+F 2 "ibxlib:3-Pin-Header" H 5775 9555 50  0001 C CNN
+F 3 "~" H 5775 9555 50  0001 C CNN
+	1    5775 9555
+	0    -1   -1   0   
+$EndComp
+$Comp
+L ibx:ADC-AD1674 U10
+U 1 1 5BC67F67
+P 10830 9225
+F 0 "U10" H 10830 10137 60  0000 C CNN
+F 1 "ADC-AD1674" H 10830 10031 60  0000 C CNN
+F 2 "Package_DIP:DIP-28_W15.24mm_Socket" H 10905 8950 60  0001 C CNN
+F 3 "https://www.analog.com/media/en/technical-documentation/data-sheets/AD1674.pdf" H 10905 8950 60  0001 C CNN
+F 4 "AD1674JNZ-ND" H 10830 9225 50  0001 C CNN "DigiKey"
+	1    10830 9225
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR055
+U 1 1 5BC6856A
+P 11355 10225
+F 0 "#PWR055" H 11355 9975 50  0001 C CNN
+F 1 "GND" H 11360 10052 50  0000 C CNN
+F 2 "" H 11355 10225 50  0001 C CNN
+F 3 "" H 11355 10225 50  0001 C CNN
+	1    11355 10225
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR020
+U 1 1 5BC690D6
+P 4100 8495
+F 0 "#PWR020" H 4100 8245 50  0001 C CNN
+F 1 "GND" H 4105 8322 50  0000 C CNN
+F 2 "" H 4100 8495 50  0001 C CNN
+F 3 "" H 4100 8495 50  0001 C CNN
+	1    4100 8495
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR028
+U 1 1 5BC69451
+P 5340 7895
+F 0 "#PWR028" H 5340 7645 50  0001 C CNN
+F 1 "GND" H 5345 7722 50  0000 C CNN
+F 2 "" H 5340 7895 50  0001 C CNN
+F 3 "" H 5340 7895 50  0001 C CNN
+	1    5340 7895
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR05
+U 1 1 5BC698A2
+P 2690 8560
+F 0 "#PWR05" H 2690 8310 50  0001 C CNN
+F 1 "GND" H 2695 8387 50  0000 C CNN
+F 2 "" H 2690 8560 50  0001 C CNN
+F 3 "" H 2690 8560 50  0001 C CNN
+	1    2690 8560
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR013
+U 1 1 5BC69B47
+P 3350 8560
+F 0 "#PWR013" H 3350 8310 50  0001 C CNN
+F 1 "GND" H 3355 8387 50  0000 C CNN
+F 2 "" H 3350 8560 50  0001 C CNN
+F 3 "" H 3350 8560 50  0001 C CNN
+	1    3350 8560
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:Opamp_Dual_Generic U1
+U 1 1 5BC6AE41
+P 3120 9030
+F 0 "U1" H 3120 9397 50  0000 C CNN
+F 1 "AD826" H 3120 9306 50  0000 C CNN
+F 2 "ibxlib:DIP-8" H 3120 9030 50  0001 C CNN
+F 3 "https://www.analog.com/media/en/technical-documentation/data-sheets/AD826.pdf" H 3120 9030 50  0001 C CNN
+F 4 "AD826ANZ-ND" H 3120 9030 50  0001 C CNN "DigiKey"
+	1    3120 9030
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:Opamp_Dual_Generic U1
+U 3 1 5BC6B257
+P 3120 9030
+F 0 "U1" H 3175 9160 50  0000 L CNN
+F 1 "AD826" H 3190 8930 50  0000 L CNN
+F 2 "ibxlib:DIP-8" H 3120 9030 50  0001 C CNN
+F 3 "https://www.analog.com/media/en/technical-documentation/data-sheets/AD826.pdf" H 3120 9030 50  0001 C CNN
+	3    3120 9030
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:-12V #PWR07
+U 1 1 5BC6E73F
+P 2820 3845
+F 0 "#PWR07" H 2820 3945 50  0001 C CNN
+F 1 "-12V" H 2835 4018 50  0000 C CNN
+F 2 "" H 2820 3845 50  0001 C CNN
+F 3 "" H 2820 3845 50  0001 C CNN
+	1    2820 3845
+	-1   0    0    1   
+$EndComp
+$Comp
+L power:+12V #PWR029
+U 1 1 5BCB6918
+P 6295 3820
+F 0 "#PWR029" H 6295 3670 50  0001 C CNN
+F 1 "+12V" H 6310 3993 50  0000 C CNN
+F 2 "" H 6295 3820 50  0001 C CNN
+F 3 "" H 6295 3820 50  0001 C CNN
+	1    6295 3820
+	-1   0    0    1   
+$EndComp
+$Comp
+L power:+5V #PWR02
+U 1 1 5BCB7472
+P 1495 995
+F 0 "#PWR02" H 1495 845 50  0001 C CNN
+F 1 "+5V" H 1510 1168 50  0000 C CNN
+F 2 "" H 1495 995 50  0001 C CNN
+F 3 "" H 1495 995 50  0001 C CNN
+	1    1495 995 
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:Polyfuse_Small F2
+U 1 1 5BCB8EEE
+P 2820 3470
+F 0 "F2" V 2775 3295 50  0000 L CNN
+F 1 "HC:120mA" V 2888 3425 50  0000 C CNN
+F 2 "Fuse:Fuse_Littelfuse_395Series" H 2870 3270 50  0001 L CNN
+F 3 "https://product.tdk.com/info/en/documents/data_sheet/55/db/PTC/PTC_OC_Leaded_12V_24V_C935_C995.pdf" H 2820 3470 50  0001 C CNN
+F 4 "495-3907-ND" V 2820 3470 50  0001 C CNN "DigiKey"
+	1    2820 3470
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:Polyfuse_Small F3
+U 1 1 5BCB9BCE
+P 6295 3495
+F 0 "F3" V 6250 3320 50  0000 L CNN
+F 1 "HC:250mA" V 6363 3450 50  0000 C CNN
+F 2 "Fuse:Fuse_Littelfuse_395Series" H 6345 3295 50  0001 L CNN
+F 3 "https://product.tdk.com/info/en/documents/data_sheet/55/db/PTC/PTC_OC_Leaded_12V_24V_C935_C995.pdf" H 6295 3495 50  0001 C CNN
+F 4 "495-3904-ND" V 6295 3495 50  0001 C CNN "DigiKey"
+	1    6295 3495
+	1    0    0    -1  
+$EndComp
+$Comp
+L 74xx:74LS138 U8
+U 1 1 5BCBA777
+P 8620 2470
+F 0 "U8" V 8915 1900 50  0000 R CNN
+F 1 "74HCT138" V 9005 1995 50  0000 R CNN
+F 2 "Package_DIP:DIP-16_W7.62mm_Socket" H 8620 2470 50  0001 C CNN
+F 3 "http://www.ti.com/lit/ds/symlink/cd74hc138.pdf" H 8620 2470 50  0001 C CNN
+F 4 "296-2091-5-ND" V 8620 2470 50  0001 C CNN "DigiKey"
+	1    8620 2470
+	0    -1   -1   0   
+$EndComp
+NoConn ~ 8320 1970
+$Comp
+L power:GND #PWR06
+U 1 1 5BE618E6
+P 2690 9520
+F 0 "#PWR06" H 2690 9270 50  0001 C CNN
+F 1 "GND" H 2695 9347 50  0000 C CNN
+F 2 "" H 2690 9520 50  0001 C CNN
+F 3 "" H 2690 9520 50  0001 C CNN
+	1    2690 9520
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR014
+U 1 1 5BE61BF3
+P 3350 9520
+F 0 "#PWR014" H 3350 9270 50  0001 C CNN
+F 1 "GND" H 3355 9347 50  0000 C CNN
+F 2 "" H 3350 9520 50  0001 C CNN
+F 3 "" H 3350 9520 50  0001 C CNN
+	1    3350 9520
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:Opamp_Dual_Generic U1
+U 2 1 5BE6227A
+P 5030 9130
+F 0 "U1" H 5220 9275 50  0000 C CNN
+F 1 "AD826" H 5225 9020 50  0000 C CNN
+F 2 "ibxlib:DIP-8" H 5030 9130 50  0001 C CNN
+F 3 "https://www.analog.com/media/en/technical-documentation/data-sheets/AD826.pdf" H 5030 9130 50  0001 C CNN
+	2    5030 9130
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:+5V #PWR035
+U 1 1 5BE62F1C
+P 7920 2320
+F 0 "#PWR035" H 7920 2170 50  0001 C CNN
+F 1 "+5V" H 7935 2493 50  0000 C CNN
+F 2 "" H 7920 2320 50  0001 C CNN
+F 3 "" H 7920 2320 50  0001 C CNN
+	1    7920 2320
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR036
+U 1 1 5BE64F55
+P 7920 2770
+F 0 "#PWR036" H 7920 2520 50  0001 C CNN
+F 1 "GND" H 7925 2597 50  0000 C CNN
+F 2 "" H 7920 2770 50  0001 C CNN
+F 3 "" H 7920 2770 50  0001 C CNN
+	1    7920 2770
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR046
+U 1 1 5BE883F9
+P 9320 2470
+F 0 "#PWR046" H 9320 2220 50  0001 C CNN
+F 1 "GND" H 9325 2297 50  0000 C CNN
+F 2 "" H 9320 2470 50  0001 C CNN
+F 3 "" H 9320 2470 50  0001 C CNN
+	1    9320 2470
+	1    0    0    -1  
+$EndComp
+$Comp
+L Analog_Switch:DG418xJ U2
+U 1 1 5BEACAC5
+P 4870 7805
+F 0 "U2" H 4870 7979 50  0000 C CNN
+F 1 "DG418" H 4870 8070 50  0000 C CNN
+F 2 "ibxlib:DIP-8" H 4870 7705 50  0001 C CNN
+F 3 "http://www.vishay.com/docs/70051/dg417.pdf" H 4870 7805 50  0001 C CNN
+F 4 "DG418DJ-E3-ND" H 4870 7805 50  0001 C CNN "DigiKey"
+	1    4870 7805
+	1    0    0    1   
+$EndComp
+$Comp
+L Analog_Switch:DG418xJ U2
+U 2 1 5BEACD20
+P 3625 7570
+F 0 "U2" V 3300 7570 50  0000 C CNN
+F 1 "DG418" V 3391 7570 50  0000 C CNN
+F 2 "ibxlib:DIP-8" H 3625 7470 50  0001 C CNN
+F 3 "http://www.vishay.com/docs/70051/dg417.pdf" H 3625 7570 50  0001 C CNN
+F 4 "DG418DJ-E3-ND" V 3625 7570 50  0001 C CNN "DigiKey"
+	2    3625 7570
+	0    1    1    0   
+$EndComp
+$Comp
+L power:GND #PWR012
+U 1 1 5BEF4127
+P 3050 7570
+F 0 "#PWR012" H 3050 7320 50  0001 C CNN
+F 1 "GND" H 3055 7397 50  0000 C CNN
+F 2 "" H 3050 7570 50  0001 C CNN
+F 3 "" H 3050 7570 50  0001 C CNN
+	1    3050 7570
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	3125 7570 3050 7570
+Wire Wire Line
+	4220 7670 4125 7670
+Wire Wire Line
+	4125 7570 4220 7570
+$Comp
+L power:+5V #PWR023
+U 1 1 5BF833DA
+P 4220 7670
+F 0 "#PWR023" H 4220 7520 50  0001 C CNN
+F 1 "+5V" H 4235 7843 50  0000 C CNN
+F 2 "" H 4220 7670 50  0001 C CNN
+F 3 "" H 4220 7670 50  0001 C CNN
+	1    4220 7670
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	3040 7670 3125 7670
+Wire Wire Line
+	4870 7605 5550 7605
+Wire Wire Line
+	5550 7205 5550 7605
+$Comp
+L Device:C_Small C8
+U 1 1 5C0C903D
+P 4100 8345
+F 0 "C8" V 3920 8345 39  0000 C CNN
+F 1 "470pF" V 3990 8345 28  0000 C CNN
+F 2 "ibxlib:FG18" H 4100 8345 50  0001 C CNN
+F 3 "https://product.tdk.com/info/en/documents/chara_sheet/FG18C0G1H471JNT06.pdf" H 4100 8345 50  0001 C CNN
+F 4 "445-173197-1-ND" V 4100 8345 50  0001 C CNN "DigiKey"
+	1    4100 8345
+	1    0    0    1   
+$EndComp
+$Comp
+L Device:D_Schottky_Small D2
+U 1 1 5C17A0BA
+P 3920 9030
+F 0 "D2" H 3920 8825 50  0000 C CNN
+F 1 "SD103A" H 3920 8916 50  0000 C CNN
+F 2 "Diode_THT:D_DO-35_SOD27_P7.62mm_Horizontal" V 3920 9030 50  0001 C CNN
+F 3 "http://www.vishay.com/docs/85754/sd103a.pdf" V 3920 9030 50  0001 C CNN
+F 4 "SD103AVSCT-ND" H 3920 9030 50  0001 C CNN "DigiKey"
+	1    3920 9030
+	-1   0    0    1   
+$EndComp
+$Comp
+L Device:C_Small C7
+U 1 1 5C22C051
+P 3830 9840
+F 0 "C7" V 3645 9840 39  0000 C CNN
+F 1 "10pF" V 3715 9840 28  0000 C CNN
+F 2 "ibxlib:FG18" H 3830 9840 50  0001 C CNN
+F 3 "https://product.tdk.com/info/en/documents/chara_sheet/FG18C0G1H100DNT06.pdf" H 3830 9840 50  0001 C CNN
+F 4 "445-173169-1-ND" V 3830 9840 50  0001 C CNN "DigiKey"
+	1    3830 9840
+	0    -1   -1   0   
+$EndComp
+$Comp
+L Connector:TestPoint TP4
+U 1 1 5C2520DA
+P 8555 9475
+F 0 "TP4" V 8750 9549 50  0000 C CNN
+F 1 "ADC_VRef" V 8659 9549 50  0000 C CNN
+F 2 "ibxlib:TP" H 8755 9475 50  0001 C CNN
+F 3 "~" H 8755 9475 50  0001 C CNN
+F 4 "36-5001-ND" V 8555 9475 50  0001 C CNN "DigiKey"
+	1    8555 9475
+	0    -1   -1   0   
+$EndComp
+$Comp
+L power:-12V #PWR043
+U 1 1 5C303183
+P 8990 9575
+F 0 "#PWR043" H 8990 9675 50  0001 C CNN
+F 1 "-12V" H 8950 9735 50  0000 C CNN
+F 2 "" H 8990 9575 50  0001 C CNN
+F 3 "" H 8990 9575 50  0001 C CNN
+	1    8990 9575
+	0    -1   -1   0   
+$EndComp
+$Comp
+L power:+12V #PWR032
+U 1 1 5C303938
+P 7660 9175
+F 0 "#PWR032" H 7660 9025 50  0001 C CNN
+F 1 "+12V" H 7675 9348 50  0000 C CNN
+F 2 "" H 7660 9175 50  0001 C CNN
+F 3 "" H 7660 9175 50  0001 C CNN
+	1    7660 9175
+	0    -1   -1   0   
+$EndComp
+Wire Wire Line
+	7835 9200 7835 9175
+Connection ~ 7835 9175
+Wire Wire Line
+	7835 9175 7660 9175
+$Comp
+L power:GND #PWR033
+U 1 1 5C327C8D
+P 7835 9400
+F 0 "#PWR033" H 7835 9150 50  0001 C CNN
+F 1 "GND" H 7840 9227 50  0000 C CNN
+F 2 "" H 7835 9400 50  0001 C CNN
+F 3 "" H 7835 9400 50  0001 C CNN
+	1    7835 9400
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR044
+U 1 1 5C390D98
+P 9120 9795
+F 0 "#PWR044" H 9120 9545 50  0001 C CNN
+F 1 "GND" H 9120 9640 50  0000 C CNN
+F 2 "" H 9120 9795 50  0001 C CNN
+F 3 "" H 9120 9795 50  0001 C CNN
+	1    9120 9795
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:+5V #PWR048
+U 1 1 5C3D7DAE
+P 10155 8055
+F 0 "#PWR048" H 10155 7905 50  0001 C CNN
+F 1 "+5V" H 10170 8228 50  0000 C CNN
+F 2 "" H 10155 8055 50  0001 C CNN
+F 3 "" H 10155 8055 50  0001 C CNN
+	1    10155 8055
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR050
+U 1 1 5C3D8C0C
+P 10550 8150
+F 0 "#PWR050" H 10550 7900 50  0001 C CNN
+F 1 "GND" H 10555 7977 50  0000 C CNN
+F 2 "" H 10550 8150 50  0001 C CNN
+F 3 "" H 10550 8150 50  0001 C CNN
+	1    10550 8150
+	0    -1   -1   0   
+$EndComp
+$Comp
+L power:+5V #PWR052
+U 1 1 5C3D9754
+P 10855 5615
+F 0 "#PWR052" H 10855 5465 50  0001 C CNN
+F 1 "+5V" H 10870 5788 50  0000 C CNN
+F 2 "" H 10855 5615 50  0001 C CNN
+F 3 "" H 10855 5615 50  0001 C CNN
+	1    10855 5615
+	1    0    0    -1  
+$EndComp
+$Comp
+L 74xx:74HC244 U11
+U 1 1 5C3D8FD6
+P 10855 6825
+F 0 "U11" H 11045 7490 50  0000 C CNN
+F 1 "74HCT244" H 10590 7500 50  0000 C CNN
+F 2 "Package_DIP:DIP-20_W7.62mm_Socket" H 10855 6825 50  0001 C CNN
+F 3 "http://www.ti.com/lit/ds/symlink/cd74hc240.pdf" H 10855 6825 50  0001 C CNN
+F 4 "296-2104-5-ND" H 10855 6825 50  0001 C CNN "DigiKey"
+	1    10855 6825
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	10855 6025 10855 5650
+Wire Wire Line
+	11355 7025 11505 7025
+Wire Wire Line
+	11355 6925 11505 6925
+Wire Wire Line
+	11355 6825 11505 6825
+Wire Wire Line
+	11355 6725 11505 6725
+Wire Wire Line
+	11355 6325 11505 6325
+Wire Wire Line
+	11355 6425 11505 6425
+Wire Wire Line
+	11355 6525 11505 6525
+Wire Wire Line
+	11355 6625 11505 6625
+$Comp
+L power:GND #PWR053
+U 1 1 5C3FE9E0
+P 10855 7625
+F 0 "#PWR053" H 10855 7375 50  0001 C CNN
+F 1 "GND" H 10855 7470 50  0000 C CNN
+F 2 "" H 10855 7625 50  0001 C CNN
+F 3 "" H 10855 7625 50  0001 C CNN
+	1    10855 7625
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	10305 8575 10155 8575
+Wire Wire Line
+	10155 8575 10155 8150
+Connection ~ 10155 8150
+$Comp
+L Connector:TestPoint TP11
+U 1 1 5C4ADCF7
+P 11510 7835
+F 0 "TP11" V 11464 8022 50  0000 L CNN
+F 1 "ADC_STS" V 11555 8022 50  0000 L CNN
+F 2 "ibxlib:TP" H 11710 7835 50  0001 C CNN
+F 3 "~" H 11710 7835 50  0001 C CNN
+F 4 "36-5001-ND" V 11510 7835 50  0001 C CNN "DigiKey"
+	1    11510 7835
+	0    1    1    0   
+$EndComp
+Connection ~ 11455 7835
+Wire Wire Line
+	11455 7835 11510 7835
+$Comp
+L Connector_Generic:Conn_01x03 J1
+U 1 1 5C5183A1
+P 1285 7605
+F 0 "J1" V 1251 7417 50  0000 R CNN
+F 1 "SigOut" V 1160 7417 50  0000 R CNN
+F 2 "ibxlib:3-Pin-Header" H 1285 7605 50  0001 C CNN
+F 3 "~" H 1285 7605 50  0001 C CNN
+	1    1285 7605
+	0    -1   -1   0   
+$EndComp
+$Comp
+L 74xx:7400 U6
+U 2 1 5C51A0B8
+P 6885 7695
+F 0 "U6" H 6880 7755 50  0000 C CNN
+F 1 "74HCT00" H 6880 7650 50  0000 C CNN
+F 2 "ibxlib:DIP-14" H 6885 7695 50  0001 C CNN
+F 3 "http://www.ti.com/lit/ds/symlink/cd74hc74.pdf" H 6885 7695 50  0001 C CNN
+	2    6885 7695
+	1    0    0    -1  
+$EndComp
+$Comp
+L 74xx:7400 U6
+U 1 1 5C519BD7
+P 6885 7345
+F 0 "U6" H 6875 7415 50  0000 C CNN
+F 1 "74HCT00" H 6885 7275 50  0000 C CNN
+F 2 "ibxlib:DIP-14" H 6885 7345 50  0001 C CNN
+F 3 "http://www.ti.com/lit/ds/symlink/cd74hc74.pdf" H 6885 7345 50  0001 C CNN
+	1    6885 7345
+	1    0    0    -1  
+$EndComp
+$Comp
+L 74xx:7400 U6
+U 3 1 5C51B022
+P 6885 8045
+F 0 "U6" H 6870 8105 50  0000 C CNN
+F 1 "74HCT00" H 6880 7980 50  0000 C CNN
+F 2 "ibxlib:DIP-14" H 6885 8045 50  0001 C CNN
+F 3 "http://www.ti.com/lit/ds/symlink/cd74hc74.pdf" H 6885 8045 50  0001 C CNN
+	3    6885 8045
+	1    0    0    -1  
+$EndComp
+$Comp
+L 74xx:7400 U6
+U 4 1 5C51B38F
+P 6885 8390
+F 0 "U6" H 6880 8445 50  0000 C CNN
+F 1 "74HCT00" H 6880 8330 50  0000 C CNN
+F 2 "ibxlib:DIP-14" H 6885 8390 50  0001 C CNN
+F 3 "http://www.ti.com/lit/ds/symlink/cd74hc74.pdf" H 6885 8390 50  0001 C CNN
+	4    6885 8390
+	1    0    0    -1  
+$EndComp
+$Comp
+L 74xx:7400 U7
+U 1 1 5C51D4E4
+P 7515 7945
+F 0 "U7" H 7505 8015 50  0000 C CNN
+F 1 "74HCT00" H 7515 7875 50  0000 C CNN
+F 2 "ibxlib:DIP-14" H 7515 7945 50  0001 C CNN
+F 3 "http://www.ti.com/lit/ds/symlink/cd74hc74.pdf" H 7515 7945 50  0001 C CNN
+	1    7515 7945
+	1    0    0    -1  
+$EndComp
+$Comp
+L 74xx:7400 U7
+U 2 1 5C51D824
+P 8740 7845
+F 0 "U7" H 8735 7905 50  0000 C CNN
+F 1 "74HCT00" H 8735 7800 50  0000 C CNN
+F 2 "ibxlib:DIP-14" H 8740 7845 50  0001 C CNN
+F 3 "http://www.ti.com/lit/ds/symlink/cd74hc74.pdf" H 8740 7845 50  0001 C CNN
+	2    8740 7845
+	1    0    0    -1  
+$EndComp
+$Comp
+L 74xx:7400 U7
+U 3 1 5C51DCDA
+P 12210 3610
+F 0 "U7" H 12195 3670 50  0000 C CNN
+F 1 "74HCT00" H 12205 3545 50  0000 C CNN
+F 2 "ibxlib:DIP-14" H 12210 3610 50  0001 C CNN
+F 3 "http://www.ti.com/lit/ds/symlink/cd74hc74.pdf" H 12210 3610 50  0001 C CNN
+	3    12210 3610
+	1    0    0    -1  
+$EndComp
+$Comp
+L 74xx:74HC04 U5
+U 3 1 5C542FBB
+P 9380 8280
+F 0 "U5" H 9380 8597 50  0000 C CNN
+F 1 "74HCT04" H 9380 8506 50  0000 C CNN
+F 2 "ibxlib:DIP-14" H 9380 8280 50  0001 C CNN
+F 3 "http://www.ti.com/lit/ds/symlink/cd74hc04.pdf" H 9380 8280 50  0001 C CNN
+	3    9380 8280
+	1    0    0    -1  
+$EndComp
+$Comp
+L Connector:TestPoint TP6
+U 1 1 5C5435EA
+P 9120 7495
+F 0 "TP6" V 9068 7683 50  0000 L CNN
+F 1 "DebA0" V 9166 7683 50  0000 L CNN
+F 2 "ibxlib:TP" H 9320 7495 50  0001 C CNN
+F 3 "~" H 9320 7495 50  0001 C CNN
+F 4 "36-5001-ND" V 9120 7495 50  0001 C CNN "DigiKey"
+	1    9120 7495
+	1    0    0    -1  
+$EndComp
+$Comp
+L Connector:TestPoint TP7
+U 1 1 5C5ADBB9
+P 9235 9040
+F 0 "TP7" V 9183 9228 50  0000 L CNN
+F 1 "DebCE" V 9281 9228 50  0000 L CNN
+F 2 "ibxlib:TP" H 9435 9040 50  0001 C CNN
+F 3 "~" H 9435 9040 50  0001 C CNN
+	1    9235 9040
+	1    0    0    -1  
+$EndComp
+$Comp
+L Connector:TestPoint TP8
+U 1 1 5C5AE3F3
+P 9535 8430
+F 0 "TP8" V 9483 8618 50  0000 L CNN
+F 1 "~DebCS" V 9581 8618 50  0000 L CNN
+F 2 "ibxlib:TP" H 9735 8430 50  0001 C CNN
+F 3 "~" H 9735 8430 50  0001 C CNN
+F 4 "36-5001-ND" V 9535 8430 50  0001 C CNN "DigiKey"
+	1    9535 8430
+	-1   0    0    1   
+$EndComp
+Wire Wire Line
+	9680 8430 9680 8775
+$Comp
+L power:GND #PWR057
+U 1 1 5C6EE123
+P 13415 7875
+F 0 "#PWR057" H 13415 7625 50  0001 C CNN
+F 1 "GND" H 13415 7720 50  0000 C CNN
+F 2 "" H 13415 7875 50  0001 C CNN
+F 3 "" H 13415 7875 50  0001 C CNN
+	1    13415 7875
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR060
+U 1 1 5C6EE20C
+P 13870 7870
+F 0 "#PWR060" H 13870 7620 50  0001 C CNN
+F 1 "GND" H 13870 7715 50  0000 C CNN
+F 2 "" H 13870 7870 50  0001 C CNN
+F 3 "" H 13870 7870 50  0001 C CNN
+	1    13870 7870
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR063
+U 1 1 5C6EE59A
+P 14330 7870
+F 0 "#PWR063" H 14330 7620 50  0001 C CNN
+F 1 "GND" H 14330 7715 50  0000 C CNN
+F 2 "" H 14330 7870 50  0001 C CNN
+F 3 "" H 14330 7870 50  0001 C CNN
+	1    14330 7870
+	1    0    0    -1  
+$EndComp
+$Comp
+L 74xx:74HC04 U9
+U 6 1 5C6EEF8E
+P 13445 3610
+F 0 "U9" H 13445 3927 50  0000 C CNN
+F 1 "74HCT04" H 13445 3836 50  0000 C CNN
+F 2 "ibxlib:DIP-14" H 13445 3610 50  0001 C CNN
+F 3 "http://www.ti.com/lit/ds/symlink/cd74hc04.pdf" H 13445 3610 50  0001 C CNN
+	6    13445 3610
+	1    0    0    -1  
+$EndComp
+Text GLabel 10275 1435 2    60   Output ~ 0
+O1
+$Comp
+L 74xx:74HC04 U9
+U 2 1 5C75B163
+P 9975 1435
+F 0 "U9" H 9975 1490 50  0000 C CNN
+F 1 "74HCT04" H 9975 1400 50  0000 C CNN
+F 2 "ibxlib:DIP-14" H 9975 1435 50  0001 C CNN
+F 3 "http://www.ti.com/lit/ds/symlink/cd74hc04.pdf" H 9975 1435 50  0001 C CNN
+	2    9975 1435
+	1    0    0    -1  
+$EndComp
+$Comp
+L 74xx:74HC04 U9
+U 3 1 5C75B30A
+P 9975 1775
+F 0 "U9" H 9975 1815 50  0000 C CNN
+F 1 "74HCT04" H 9975 1710 50  0000 C CNN
+F 2 "ibxlib:DIP-14" H 9975 1775 50  0001 C CNN
+F 3 "http://www.ti.com/lit/ds/symlink/cd74hc04.pdf" H 9975 1775 50  0001 C CNN
+	3    9975 1775
+	1    0    0    -1  
+$EndComp
+$Comp
+L 74xx:74HC04 U9
+U 4 1 5C75C7FD
+P 9975 2115
+F 0 "U9" H 9975 2160 50  0000 C CNN
+F 1 "74HCT04" H 9990 2045 50  0000 C CNN
+F 2 "ibxlib:DIP-14" H 9975 2115 50  0001 C CNN
+F 3 "http://www.ti.com/lit/ds/symlink/cd74hc04.pdf" H 9975 2115 50  0001 C CNN
+	4    9975 2115
+	1    0    0    -1  
+$EndComp
+$Comp
+L 74xx:74HC04 U9
+U 5 1 5C75C9A8
+P 9975 2455
+F 0 "U9" H 9975 2520 50  0000 C CNN
+F 1 "74HCT04" H 9975 2400 50  0000 C CNN
+F 2 "ibxlib:DIP-14" H 9975 2455 50  0001 C CNN
+F 3 "http://www.ti.com/lit/ds/symlink/cd74hc04.pdf" H 9975 2455 50  0001 C CNN
+	5    9975 2455
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:+5V #PWR056
+U 1 1 5C7A8AD2
+P 13415 6570
+F 0 "#PWR056" H 13415 6420 50  0001 C CNN
+F 1 "+5V" H 13430 6743 50  0000 C CNN
+F 2 "" H 13415 6570 50  0001 C CNN
+F 3 "" H 13415 6570 50  0001 C CNN
+	1    13415 6570
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:+5V #PWR059
+U 1 1 5C7A9093
+P 13870 6565
+F 0 "#PWR059" H 13870 6415 50  0001 C CNN
+F 1 "+5V" H 13885 6738 50  0000 C CNN
+F 2 "" H 13870 6565 50  0001 C CNN
+F 3 "" H 13870 6565 50  0001 C CNN
+	1    13870 6565
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR058
+U 1 1 5C7CCFEB
+P 13670 6865
+F 0 "#PWR058" H 13670 6615 50  0001 C CNN
+F 1 "GND" H 13670 6710 50  0000 C CNN
+F 2 "" H 13670 6865 50  0001 C CNN
+F 3 "" H 13670 6865 50  0001 C CNN
+	1    13670 6865
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:+5V #PWR062
+U 1 1 5C7F1C4E
+P 14330 6565
+F 0 "#PWR062" H 14330 6415 50  0001 C CNN
+F 1 "+5V" H 14345 6738 50  0000 C CNN
+F 2 "" H 14330 6565 50  0001 C CNN
+F 3 "" H 14330 6565 50  0001 C CNN
+	1    14330 6565
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR061
+U 1 1 5C7F1D37
+P 14125 6860
+F 0 "#PWR061" H 14125 6610 50  0001 C CNN
+F 1 "GND" H 14125 6705 50  0000 C CNN
+F 2 "" H 14125 6860 50  0001 C CNN
+F 3 "" H 14125 6860 50  0001 C CNN
+	1    14125 6860
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR064
+U 1 1 5C7F1F09
+P 14585 6860
+F 0 "#PWR064" H 14585 6610 50  0001 C CNN
+F 1 "GND" H 14585 6705 50  0000 C CNN
+F 2 "" H 14585 6860 50  0001 C CNN
+F 3 "" H 14585 6860 50  0001 C CNN
+	1    14585 6860
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:+5V #PWR065
+U 1 1 5C7F22FB
+P 14795 6545
+F 0 "#PWR065" H 14795 6395 50  0001 C CNN
+F 1 "+5V" H 14810 6718 50  0000 C CNN
+F 2 "" H 14795 6545 50  0001 C CNN
+F 3 "" H 14795 6545 50  0001 C CNN
+	1    14795 6545
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:+5V #PWR068
+U 1 1 5C7F2763
+P 15260 6565
+F 0 "#PWR068" H 15260 6415 50  0001 C CNN
+F 1 "+5V" H 15275 6738 50  0000 C CNN
+F 2 "" H 15260 6565 50  0001 C CNN
+F 3 "" H 15260 6565 50  0001 C CNN
+	1    15260 6565
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR067
+U 1 1 5C7F371A
+P 15050 6840
+F 0 "#PWR067" H 15050 6590 50  0001 C CNN
+F 1 "GND" H 15050 6685 50  0000 C CNN
+F 2 "" H 15050 6840 50  0001 C CNN
+F 3 "" H 15050 6840 50  0001 C CNN
+	1    15050 6840
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR070
+U 1 1 5C7F39BF
+P 15515 6860
+F 0 "#PWR070" H 15515 6610 50  0001 C CNN
+F 1 "GND" H 15515 6705 50  0000 C CNN
+F 2 "" H 15515 6860 50  0001 C CNN
+F 3 "" H 15515 6860 50  0001 C CNN
+	1    15515 6860
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:+5V #PWR026
+U 1 1 5BB943F8
+P 4595 5330
+F 0 "#PWR026" H 4595 5180 50  0001 C CNN
+F 1 "+5V" H 4610 5503 50  0000 C CNN
+F 2 "" H 4595 5330 50  0001 C CNN
+F 3 "" H 4595 5330 50  0001 C CNN
+	1    4595 5330
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR027
+U 1 1 5BB94B51
+P 4725 4740
+F 0 "#PWR027" H 4725 4490 50  0001 C CNN
+F 1 "GND" H 4730 4567 50  0000 C CNN
+F 2 "" H 4725 4740 50  0001 C CNN
+F 3 "" H 4725 4740 50  0001 C CNN
+	1    4725 4740
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:LED_Small D4
+U 1 1 5BB94EEC
+P 5235 4690
+F 0 "D4" H 5235 4925 50  0000 C CNN
+F 1 "LED_Small" H 5235 4834 50  0000 C CNN
+F 2 "LED_THT:LED_D5.0mm" V 5235 4690 50  0001 C CNN
+F 3 "https://www.lumex.com/content/files/ProductAttachment/SSL-LX5093USBD.pdf" V 5235 4690 50  0001 C CNN
+F 4 "67-1751-ND" H 5235 4690 50  0001 C CNN "DigiKey"
+	1    5235 4690
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR031
+U 1 1 5BB95B1B
+P 7010 6375
+F 0 "#PWR031" H 7010 6125 50  0001 C CNN
+F 1 "GND" H 7015 6202 50  0000 C CNN
+F 2 "" H 7010 6375 50  0001 C CNN
+F 3 "" H 7010 6375 50  0001 C CNN
+	1    7010 6375
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR038
+U 1 1 5BB95E97
+P 8300 6440
+F 0 "#PWR038" H 8300 6190 50  0001 C CNN
+F 1 "GND" H 8305 6267 50  0000 C CNN
+F 2 "" H 8300 6440 50  0001 C CNN
+F 3 "" H 8300 6440 50  0001 C CNN
+	1    8300 6440
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR010
+U 1 1 5BC005D0
+P 3035 6715
+F 0 "#PWR010" H 3035 6465 50  0001 C CNN
+F 1 "GND" H 3040 6542 50  0000 C CNN
+F 2 "" H 3035 6715 50  0001 C CNN
+F 3 "" H 3035 6715 50  0001 C CNN
+	1    3035 6715
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:+5V #PWR04
+U 1 1 5BC00958
+P 2435 6715
+F 0 "#PWR04" H 2435 6565 50  0001 C CNN
+F 1 "+5V" H 2450 6888 50  0000 C CNN
+F 2 "" H 2435 6715 50  0001 C CNN
+F 3 "" H 2435 6715 50  0001 C CNN
+	1    2435 6715
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:R_POT RV1
+U 1 1 5BB9670D
+P 2835 6715
+F 0 "RV1" V 2721 6715 50  0000 C CNN
+F 1 "50k" V 2630 6715 50  0000 C CNN
+F 2 "Potentiometer_THT:Potentiometer_Bourns_3006P_Horizontal" H 2835 6715 50  0001 C CNN
+F 3 "https://www.bourns.com/docs/Product-Datasheets/3006.pdf" H 2835 6715 50  0001 C CNN
+F 4 "3006P-503LF-ND" V 2835 6715 50  0001 C CNN "DigiKey"
+	1    2835 6715
+	0    -1   -1   0   
+$EndComp
+$Comp
+L Connector_Generic:Conn_01x03 J3
+U 1 1 5BC021FA
+P 2575 6105
+F 0 "J3" V 2541 5917 50  0000 R CNN
+F 1 "TrigLvl" V 2450 5917 50  0000 R CNN
+F 2 "ibxlib:3-Pin-Header" H 2575 6105 50  0001 C CNN
+F 3 "~" H 2575 6105 50  0001 C CNN
+	1    2575 6105
+	-1   0    0    1   
+$EndComp
+$Comp
+L 74xx:74HC74 U4
+U 1 1 5BC6C9FB
+P 8300 5720
+F 0 "U4" H 8300 6198 50  0000 C CNN
+F 1 "74HCT74" H 8300 6107 50  0000 C CNN
+F 2 "ibxlib:DIP-14" H 8300 5720 50  0001 C CNN
+F 3 "http://www.ti.com/lit/ds/symlink/cd74hc74.pdf" H 8300 5720 50  0001 C CNN
+F 4 "296-2132-5-ND" H 8300 5720 50  0001 C CNN "DigiKey"
+	1    8300 5720
+	1    0    0    -1  
+$EndComp
+$Comp
+L 74xx:74HC74 U4
+U 2 1 5BC6D53D
+P 5075 5820
+F 0 "U4" H 5075 6298 50  0000 C CNN
+F 1 "74HCT74" H 5075 6207 50  0000 C CNN
+F 2 "ibxlib:DIP-14" H 5075 5820 50  0001 C CNN
+F 3 "http://www.ti.com/lit/ds/symlink/cd74hc74.pdf" H 5075 5820 50  0001 C CNN
+F 4 "296-2132-5-ND" H 5075 5820 50  0001 C CNN "DigiKey"
+	2    5075 5820
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR066
+U 1 1 5BC6E72A
+P 14795 7850
+F 0 "#PWR066" H 14795 7600 50  0001 C CNN
+F 1 "GND" H 14795 7695 50  0000 C CNN
+F 2 "" H 14795 7850 50  0001 C CNN
+F 3 "" H 14795 7850 50  0001 C CNN
+	1    14795 7850
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:+5V #PWR034
+U 1 1 5BC6F6BF
+P 7870 5315
+F 0 "#PWR034" H 7870 5165 50  0001 C CNN
+F 1 "+5V" H 7885 5488 50  0000 C CNN
+F 2 "" H 7870 5315 50  0001 C CNN
+F 3 "" H 7870 5315 50  0001 C CNN
+	1    7870 5315
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	6460 5720 6665 5720
+$Comp
+L 74xx:74HC04 U5
+U 1 1 5BC93260
+P 6160 5720
+F 0 "U5" H 6160 6037 50  0000 C CNN
+F 1 "74HCT04" H 6160 5946 50  0000 C CNN
+F 2 "ibxlib:DIP-14" H 6160 5720 50  0001 C CNN
+F 3 "http://www.ti.com/lit/ds/symlink/cd74hc04.pdf" H 6160 5720 50  0001 C CNN
+	1    6160 5720
+	1    0    0    -1  
+$EndComp
+$Comp
+L 74xx:74HC04 U5
+U 2 1 5BC9368D
+P 7310 5720
+F 0 "U5" H 7310 6037 50  0000 C CNN
+F 1 "74HCT04" H 7310 5946 50  0000 C CNN
+F 2 "ibxlib:DIP-14" H 7310 5720 50  0001 C CNN
+F 3 "http://www.ti.com/lit/ds/symlink/cd74hc04.pdf" H 7310 5720 50  0001 C CNN
+	2    7310 5720
+	1    0    0    -1  
+$EndComp
+Connection ~ 7010 5720
+$Comp
+L Device:C_Small C15
+U 1 1 5BC95E8F
+P 8300 6340
+F 0 "C15" V 8110 6340 39  0000 C CNN
+F 1 "330pF" V 8170 6340 28  0000 C CNN
+F 2 "ibxlib:FG18" H 8300 6340 50  0001 C CNN
+F 3 "https://product.tdk.com/info/en/documents/chara_sheet/FG18C0G1H331JNT06.pdf" H 8300 6340 50  0001 C CNN
+F 4 "445-173190-1-ND" V 8300 6340 50  0001 C CNN "DigiKey"
+	1    8300 6340
+	1    0    0    1   
+$EndComp
+Wire Wire Line
+	8660 5820 9650 5820
+$Comp
+L power:GND #PWR042
+U 1 1 5BCDB01D
+P 8960 5620
+F 0 "#PWR042" H 8960 5370 50  0001 C CNN
+F 1 "GND" H 8965 5447 50  0000 C CNN
+F 2 "" H 8960 5620 50  0001 C CNN
+F 3 "" H 8960 5620 50  0001 C CNN
+	1    8960 5620
+	1    0    0    -1  
+$EndComp
+$Comp
+L Connector:TestPoint TP3
+U 1 1 5BCFCE92
+P 7260 6835
+F 0 "TP3" V 7208 7023 50  0000 L CNN
+F 1 "~DebReset" V 7306 7023 50  0000 L CNN
+F 2 "ibxlib:TP" H 7460 6835 50  0001 C CNN
+F 3 "~" H 7460 6835 50  0001 C CNN
+F 4 "36-5001-ND" V 7260 6835 50  0001 C CNN "DigiKey"
+	1    7260 6835
+	0    1    1    0   
+$EndComp
+$Comp
+L Connector:TestPoint TP2
+U 1 1 5BD1E84B
+P 6115 4795
+F 0 "TP2" V 6063 4983 50  0000 L CNN
+F 1 "~DebArmed" V 6161 4983 50  0000 L CNN
+F 2 "ibxlib:TP" H 6315 4795 50  0001 C CNN
+F 3 "~" H 6315 4795 50  0001 C CNN
+F 4 "36-5001-ND" V 6115 4795 50  0001 C CNN "DigiKey"
+	1    6115 4795
+	-1   0    0    1   
+$EndComp
+$Comp
+L Connector:Conn_Coaxial J2
+U 1 1 5BD82A0E
+P 1285 9455
+F 0 "J2" V 1168 9556 50  0000 L CNN
+F 1 "Detector" V 1259 9556 50  0000 L CNN
+F 2 "ibxlib:BNC_Socket_TYCO-AMP_LargePads" H 1285 9455 50  0001 C CNN
+F 3 "https://www.te.com/commerce/DocumentDelivery/DDEController?Action=srchrtrv&DocNm=1634612&DocType=Customer+Drawing&DocLang=English" H 1285 9455 50  0001 C CNN
+F 4 "A97555-ND" V 1285 9455 50  0001 C CNN "DigiKey"
+	1    1285 9455
+	0    -1   1    0   
+$EndComp
+$Comp
+L power:GND #PWR01
+U 1 1 5BE07A22
+P 1485 9455
+F 0 "#PWR01" H 1485 9205 50  0001 C CNN
+F 1 "GND" H 1490 9282 50  0000 C CNN
+F 2 "" H 1485 9455 50  0001 C CNN
+F 3 "" H 1485 9455 50  0001 C CNN
+	1    1485 9455
+	1    0    0    -1  
+$EndComp
+$Comp
+L Connector:TestPoint TP1
+U 1 1 5BE08937
+P 4660 6040
+F 0 "TP1" V 4608 6228 50  0000 L CNN
+F 1 "~DebTrig" V 4706 6228 50  0000 L CNN
+F 2 "ibxlib:TP" H 4860 6040 50  0001 C CNN
+F 3 "~" H 4860 6040 50  0001 C CNN
+F 4 "36-5001-ND" V 4660 6040 50  0001 C CNN "DigiKey"
+	1    4660 6040
+	-1   0    0    1   
+$EndComp
+Wire Wire Line
+	3700 5175 3700 5265
+Wire Wire Line
+	3620 5265 3700 5265
+Connection ~ 3700 5265
+Wire Wire Line
+	3420 5265 3370 5265
+Wire Wire Line
+	3700 5265 3700 5420
+$Comp
+L power:GND #PWR015
+U 1 1 5BE6CA57
+P 3370 5330
+F 0 "#PWR015" H 3370 5080 50  0001 C CNN
+F 1 "GND" H 3375 5157 50  0000 C CNN
+F 2 "" H 3370 5330 50  0001 C CNN
+F 3 "" H 3370 5330 50  0001 C CNN
+	1    3370 5330
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:+5V #PWR019
+U 1 1 5BF9D11F
+P 3900 5170
+F 0 "#PWR019" H 3900 5020 50  0001 C CNN
+F 1 "+5V" H 3915 5343 50  0000 C CNN
+F 2 "" H 3900 5170 50  0001 C CNN
+F 3 "" H 3900 5170 50  0001 C CNN
+	1    3900 5170
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	3700 6020 3700 6140
+Wire Wire Line
+	3620 6140 3700 6140
+Connection ~ 3700 6140
+Wire Wire Line
+	3420 6140 3370 6140
+Wire Wire Line
+	3700 6140 3700 6200
+$Comp
+L power:GND #PWR016
+U 1 1 5BFBFB4D
+P 3370 6210
+F 0 "#PWR016" H 3370 5960 50  0001 C CNN
+F 1 "GND" H 3375 6037 50  0000 C CNN
+F 2 "" H 3370 6210 50  0001 C CNN
+F 3 "" H 3370 6210 50  0001 C CNN
+	1    3370 6210
+	1    0    0    -1  
+$EndComp
+$Comp
+L ibx:AD790 U3
+U 1 1 5BE4C142
+P 3750 5720
+F 0 "U3" H 3660 5790 60  0000 L CNN
+F 1 "AD790" H 3650 5675 60  0000 L CNN
+F 2 "ibxlib:DIP-8" H 3750 5720 60  0001 C CNN
+F 3 "https://www.analog.com/media/en/technical-documentation/data-sheets/AD790.pdf" H 3750 5720 60  0001 C CNN
+F 4 "AD790JNZ-ND" H 3750 5720 50  0001 C CNN "DigiKey"
+	1    3750 5720
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:C_Small C9
+U 1 1 5C1633CF
+P 4350 5405
+F 0 "C9" V 4137 5405 39  0000 C CNN
+F 1 "100nF" V 4220 5405 28  0000 C CNN
+F 2 "ibxlib:FG18" H 4350 5405 50  0001 C CNN
+F 3 "https://product.tdk.com/info/en/documents/chara_sheet/FG18X7R1H104KNT06.pdf" H 4350 5405 50  0001 C CNN
+F 4 "445-173265-1-ND" V 4350 5405 50  0001 C CNN "DigiKey"
+	1    4350 5405
+	0    1    1    0   
+$EndComp
+$Comp
+L power:GND #PWR025
+U 1 1 5C1633D5
+P 4450 5480
+F 0 "#PWR025" H 4450 5230 50  0001 C CNN
+F 1 "GND" H 4450 5325 50  0000 C CNN
+F 2 "" H 4450 5480 50  0001 C CNN
+F 3 "" H 4450 5480 50  0001 C CNN
+	1    4450 5480
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	8820 4145 8820 4245
+Wire Wire Line
+	8920 4145 8920 4395
+$Comp
+L power:GND #PWR041
+U 1 1 5C37C564
+P 8920 4395
+F 0 "#PWR041" H 8920 4145 50  0001 C CNN
+F 1 "GND" H 8925 4222 50  0000 C CNN
+F 2 "" H 8920 4395 50  0001 C CNN
+F 3 "" H 8920 4395 50  0001 C CNN
+	1    8920 4395
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:+5V #PWR039
+U 1 1 5C37C86A
+P 8530 4245
+F 0 "#PWR039" H 8530 4095 50  0001 C CNN
+F 1 "+5V" H 8545 4418 50  0000 C CNN
+F 2 "" H 8530 4245 50  0001 C CNN
+F 3 "" H 8530 4245 50  0001 C CNN
+	1    8530 4245
+	1    0    0    -1  
+$EndComp
+$Comp
+L 74xx:7400 U7
+U 5 1 5C37DBC0
+P 13415 7375
+F 0 "U7" H 13300 7430 50  0000 L CNN
+F 1 "74HCT00" H 13245 7335 50  0000 L CNN
+F 2 "ibxlib:DIP-14" H 13415 7375 50  0001 C CNN
+F 3 "http://www.ti.com/lit/ds/symlink/cd74hc00.pdf" H 13415 7375 50  0001 C CNN
+F 4 "296-2081-5-ND" H 13415 7375 50  0001 C CNN "DigiKey"
+	5    13415 7375
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR069
+U 1 1 5C37E981
+P 15260 7870
+F 0 "#PWR069" H 15260 7620 50  0001 C CNN
+F 1 "GND" H 15260 7715 50  0000 C CNN
+F 2 "" H 15260 7870 50  0001 C CNN
+F 3 "" H 15260 7870 50  0001 C CNN
+	1    15260 7870
+	1    0    0    -1  
+$EndComp
+$Comp
+L Connector:TestPoint TP5
+U 1 1 5C37EEB2
+P 8655 5455
+F 0 "TP5" V 8603 5643 50  0000 L CNN
+F 1 "DebConv" V 8701 5643 50  0000 L CNN
+F 2 "ibxlib:TP" H 8855 5455 50  0001 C CNN
+F 3 "~" H 8855 5455 50  0001 C CNN
+F 4 "36-5001-ND" V 8655 5455 50  0001 C CNN "DigiKey"
+	1    8655 5455
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	10855 5650 11170 5650
+Wire Wire Line
+	11170 5650 11170 5690
+Connection ~ 10855 5650
+Wire Wire Line
+	10855 5650 10855 5615
+$Comp
+L power:GND #PWR054
+U 1 1 5C51E437
+P 11170 5890
+F 0 "#PWR054" H 11170 5640 50  0001 C CNN
+F 1 "GND" H 11170 5735 50  0000 C CNN
+F 2 "" H 11170 5890 50  0001 C CNN
+F 3 "" H 11170 5890 50  0001 C CNN
+	1    11170 5890
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	10700 3510 11910 3510
+Wire Wire Line
+	10355 7025 10355 6925
+Wire Wire Line
+	10355 6925 10355 6825
+Connection ~ 10355 6925
+Wire Wire Line
+	10355 6825 10355 6725
+Connection ~ 10355 6825
+Connection ~ 10355 6725
+Wire Wire Line
+	10355 6525 10355 6625
+Connection ~ 10355 6625
+Wire Wire Line
+	10355 6625 10355 6725
+Wire Wire Line
+	10355 6525 10115 6525
+Connection ~ 10355 6525
+$Comp
+L power:GND #PWR047
+U 1 1 5C75FA8A
+P 9915 6525
+F 0 "#PWR047" H 9915 6275 50  0001 C CNN
+F 1 "GND" H 9915 6370 50  0000 C CNN
+F 2 "" H 9915 6525 50  0001 C CNN
+F 3 "" H 9915 6525 50  0001 C CNN
+	1    9915 6525
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:D_Zener_Small D5
+U 1 1 5C839B8D
+P 7225 10235
+F 0 "D5" H 7225 10122 50  0000 C CNN
+F 1 "D_Zener_Small" H 7225 10121 50  0001 C CNN
+F 2 "Diode_THT:D_DO-35_SOD27_P7.62mm_Horizontal" V 7225 10235 50  0001 C CNN
+F 3 "http://www.vishay.com/docs/85604/bzx55-se.pdf" V 7225 10235 50  0001 C CNN
+F 4 "BZX55B10-TRGICT-ND" H 7225 10235 50  0001 C CNN "DigiKey"
+	1    7225 10235
+	-1   0    0    1   
+$EndComp
+$Comp
+L power:GND #PWR030
+U 1 1 5C839CA9
+P 6910 10235
+F 0 "#PWR030" H 6910 9985 50  0001 C CNN
+F 1 "GND" H 6910 10080 50  0000 C CNN
+F 2 "" H 6910 10235 50  0001 C CNN
+F 3 "" H 6910 10235 50  0001 C CNN
+	1    6910 10235
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	7325 10235 7410 10235
+Wire Wire Line
+	7410 10235 7410 10005
+Connection ~ 7410 10005
+Wire Wire Line
+	7410 10005 9680 10005
+Wire Wire Line
+	7125 10235 6910 10235
+Wire Wire Line
+	4120 9620 4120 9840
+Connection ~ 4120 9620
+Connection ~ 4120 9840
+Wire Wire Line
+	4120 9840 4430 9840
+$Comp
+L 74xx:74HC04 U9
+U 1 1 5BC37A0F
+P 11475 3860
+F 0 "U9" H 11475 4177 50  0000 C CNN
+F 1 "74HCT04" H 11475 4086 50  0000 C CNN
+F 2 "ibxlib:DIP-14" H 11475 3860 50  0001 C CNN
+F 3 "http://www.ti.com/lit/ds/symlink/cd74hc04.pdf" H 11475 3860 50  0001 C CNN
+	1    11475 3860
+	1    0    0    -1  
+$EndComp
+$Comp
+L 74xx:74HC04 U5
+U 4 1 5BC38B07
+P 7515 7590
+F 0 "U5" H 7515 7907 50  0000 C CNN
+F 1 "74HCT04" H 7515 7816 50  0000 C CNN
+F 2 "ibxlib:DIP-14" H 7515 7590 50  0001 C CNN
+F 3 "http://www.ti.com/lit/ds/symlink/cd74hc04.pdf" H 7515 7590 50  0001 C CNN
+	4    7515 7590
+	1    0    0    -1  
+$EndComp
+$Comp
+L 74xx:74HC04 U9
+U 7 1 5C75CB76
+P 14330 7370
+F 0 "U9" H 14205 7425 50  0000 L CNN
+F 1 "74HCT04" H 14165 7325 50  0000 L CNN
+F 2 "ibxlib:DIP-14" H 14330 7370 50  0001 C CNN
+F 3 "http://www.ti.com/lit/ds/symlink/cd74hct04.pdf" H 14330 7370 50  0001 C CNN
+F 4 "296-2083-5-ND" H 14330 7370 50  0001 C CNN "DigiKey"
+	7    14330 7370
+	1    0    0    -1  
+$EndComp
+$Comp
+L 74xx:74HC04 U5
+U 7 1 5C37E4AE
+P 15260 7370
+F 0 "U5" H 15265 7425 50  0000 C CNN
+F 1 "74HCT04" H 15100 7330 50  0000 L CNN
+F 2 "ibxlib:DIP-14" H 15260 7370 50  0001 C CNN
+F 3 "http://www.ti.com/lit/ds/symlink/cd74hct04.pdf" H 15260 7370 50  0001 C CNN
+F 4 "296-2083-5-ND" H 15260 7370 50  0001 C CNN "DigiKey"
+	7    15260 7370
+	1    0    0    -1  
+$EndComp
+$Comp
+L 74xx:74HC74 U4
+U 3 1 5BC6DF8C
+P 14795 7370
+F 0 "U4" H 14675 7420 50  0000 L CNN
+F 1 "74HCT74" H 14635 7330 50  0000 L CNN
+F 2 "ibxlib:DIP-14" H 14795 7370 50  0001 C CNN
+F 3 "http://www.ti.com/lit/ds/symlink/cd74hc74.pdf" H 14795 7370 50  0001 C CNN
+F 4 "296-2132-5-ND" H 14795 7370 50  0001 C CNN "DigiKey"
+	3    14795 7370
+	1    0    0    -1  
+$EndComp
+$Comp
+L 74xx:74HC04 U5
+U 5 1 5BCCB6EF
+P 8140 7945
+F 0 "U5" H 8140 8262 50  0000 C CNN
+F 1 "74HCT04" H 8140 8171 50  0000 C CNN
+F 2 "ibxlib:DIP-14" H 8140 7945 50  0001 C CNN
+F 3 "http://www.ti.com/lit/ds/symlink/cd74hc04.pdf" H 8140 7945 50  0001 C CNN
+	5    8140 7945
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	6235 7445 6585 7445
+Wire Wire Line
+	7185 6835 7260 6835
+Wire Wire Line
+	5075 6835 7185 6835
+Wire Wire Line
+	5075 6120 5075 6835
+Connection ~ 7185 6835
+Wire Wire Line
+	2835 6205 2835 6565
+Wire Wire Line
+	3900 5170 3900 5220
+Wire Wire Line
+	4100 5620 4150 5620
+Wire Wire Line
+	4150 5405 4250 5405
+Wire Wire Line
+	4150 5405 4150 5620
+$Comp
+L power:+5V #PWR021
+U 1 1 5C3FFEA0
+P 4150 5360
+F 0 "#PWR021" H 4150 5210 50  0001 C CNN
+F 1 "+5V" H 4165 5533 50  0000 C CNN
+F 2 "" H 4150 5360 50  0001 C CNN
+F 3 "" H 4150 5360 50  0001 C CNN
+	1    4150 5360
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	4150 5360 4150 5405
+Connection ~ 4150 5405
+Wire Wire Line
+	4100 5820 4345 5820
+Wire Wire Line
+	2775 5820 3500 5820
+Wire Wire Line
+	2775 5820 2775 6005
+Wire Wire Line
+	2105 6405 2105 5620
+Wire Wire Line
+	2105 5620 3500 5620
+$Comp
+L power:-12V #PWR018
+U 1 1 5C4ECE4C
+P 3700 6200
+F 0 "#PWR018" H 3700 6300 50  0001 C CNN
+F 1 "-12V" H 3715 6373 50  0000 C CNN
+F 2 "" H 3700 6200 50  0001 C CNN
+F 3 "" H 3700 6200 50  0001 C CNN
+	1    3700 6200
+	-1   0    0    1   
+$EndComp
+$Comp
+L power:+12V #PWR017
+U 1 1 5C4ED27B
+P 3700 5175
+F 0 "#PWR017" H 3700 5025 50  0001 C CNN
+F 1 "+12V" H 3715 5348 50  0000 C CNN
+F 2 "" H 3700 5175 50  0001 C CNN
+F 3 "" H 3700 5175 50  0001 C CNN
+	1    3700 5175
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	4450 5405 4450 5480
+$Comp
+L power:GND #PWR024
+U 1 1 5C5545D8
+P 4300 6210
+F 0 "#PWR024" H 4300 5960 50  0001 C CNN
+F 1 "GND" H 4305 6037 50  0000 C CNN
+F 2 "" H 4300 6210 50  0001 C CNN
+F 3 "" H 4300 6210 50  0001 C CNN
+	1    4300 6210
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	4300 6020 4300 6210
+Wire Wire Line
+	3800 6020 4300 6020
+Wire Wire Line
+	3370 5265 3370 5330
+$Comp
+L Device:C_Small C3
+U 1 1 5C5E38B7
+P 3200 8490
+F 0 "C3" V 3020 8490 39  0000 C CNN
+F 1 "10nF" V 3080 8490 28  0000 C CNN
+F 2 "ibxlib:FG18" H 3200 8490 50  0001 C CNN
+F 3 "https://product.tdk.com/info/en/documents/chara_sheet/FG18X7R1H103KNT06.pdf" H 3200 8490 50  0001 C CNN
+F 4 "445-173172-1-ND" V 3200 8490 50  0001 C CNN "DigiKey"
+	1    3200 8490
+	0    1    1    0   
+$EndComp
+$Comp
+L Device:C_Small C4
+U 1 1 5C5E3BC7
+P 3200 9450
+F 0 "C4" V 3020 9450 39  0000 C CNN
+F 1 "10nF" V 3080 9450 28  0000 C CNN
+F 2 "ibxlib:FG18" H 3200 9450 50  0001 C CNN
+F 3 "https://product.tdk.com/info/en/documents/chara_sheet/FG18X7R1H103KNT06.pdf" H 3200 9450 50  0001 C CNN
+F 4 "445-173172-1-ND" V 3200 9450 50  0001 C CNN "DigiKey"
+	1    3200 9450
+	0    1    1    0   
+$EndComp
+$Comp
+L Device:C_Small C10
+U 1 1 5C5E4DC0
+P 4430 9350
+F 0 "C10" V 4255 9350 39  0000 C CNN
+F 1 "10pF" V 4320 9350 28  0000 C CNN
+F 2 "ibxlib:FG18" H 4430 9350 50  0001 C CNN
+F 3 "https://product.tdk.com/info/en/documents/chara_sheet/FG18C0G1H100DNT06.pdf" H 4430 9350 50  0001 C CNN
+F 4 "445-173169-1-ND" V 4430 9350 50  0001 C CNN "DigiKey"
+	1    4430 9350
+	-1   0    0    -1  
+$EndComp
+$Comp
+L Device:C_Small C21
+U 1 1 5C629DFD
+P 13670 6765
+F 0 "C21" V 13495 6765 39  0000 C CNN
+F 1 "100nF" V 13560 6765 28  0000 C CNN
+F 2 "ibxlib:FG18" H 13670 6765 50  0001 C CNN
+F 3 "https://product.tdk.com/info/en/documents/chara_sheet/FG18X7R1H104KNT06.pdf" H 13670 6765 50  0001 C CNN
+F 4 "445-173265-1-ND" V 13670 6765 50  0001 C CNN "DigiKey"
+	1    13670 6765
+	1    0    0    1   
+$EndComp
+$Comp
+L Device:C_Small C22
+U 1 1 5C66F658
+P 14125 6760
+F 0 "C22" V 13950 6760 39  0000 C CNN
+F 1 "100nF" V 14015 6760 28  0000 C CNN
+F 2 "ibxlib:FG18" H 14125 6760 50  0001 C CNN
+F 3 "https://product.tdk.com/info/en/documents/chara_sheet/FG18X7R1H104KNT06.pdf" H 14125 6760 50  0001 C CNN
+F 4 "445-173265-1-ND" V 14125 6760 50  0001 C CNN "DigiKey"
+	1    14125 6760
+	1    0    0    1   
+$EndComp
+$Comp
+L Device:C_Small C23
+U 1 1 5C66F944
+P 14585 6760
+F 0 "C23" V 14410 6760 39  0000 C CNN
+F 1 "100nF" V 14475 6760 28  0000 C CNN
+F 2 "ibxlib:FG18" H 14585 6760 50  0001 C CNN
+F 3 "https://product.tdk.com/info/en/documents/chara_sheet/FG18X7R1H104KNT06.pdf" H 14585 6760 50  0001 C CNN
+F 4 "445-173265-1-ND" V 14585 6760 50  0001 C CNN "DigiKey"
+	1    14585 6760
+	1    0    0    1   
+$EndComp
+$Comp
+L Device:C_Small C24
+U 1 1 5C66FD6D
+P 15050 6740
+F 0 "C24" V 14875 6740 39  0000 C CNN
+F 1 "100nF" V 14940 6740 28  0000 C CNN
+F 2 "ibxlib:FG18" H 15050 6740 50  0001 C CNN
+F 3 "https://product.tdk.com/info/en/documents/chara_sheet/FG18X7R1H104KNT06.pdf" H 15050 6740 50  0001 C CNN
+F 4 "445-173265-1-ND" V 15050 6740 50  0001 C CNN "DigiKey"
+	1    15050 6740
+	1    0    0    1   
+$EndComp
+$Comp
+L Device:C_Small C25
+U 1 1 5C670309
+P 15515 6760
+F 0 "C25" V 15340 6760 39  0000 C CNN
+F 1 "100nF" V 15405 6760 28  0000 C CNN
+F 2 "ibxlib:FG18" H 15515 6760 50  0001 C CNN
+F 3 "https://product.tdk.com/info/en/documents/chara_sheet/FG18X7R1H104KNT06.pdf" H 15515 6760 50  0001 C CNN
+F 4 "445-173265-1-ND" V 15515 6760 50  0001 C CNN "DigiKey"
+	1    15515 6760
+	1    0    0    1   
+$EndComp
+$Comp
+L Device:C_Small C20
+U 1 1 5C692A1B
+P 11170 5790
+F 0 "C20" V 10995 5790 39  0000 C CNN
+F 1 "100nF" V 11060 5790 28  0000 C CNN
+F 2 "ibxlib:FG18" H 11170 5790 50  0001 C CNN
+F 3 "https://product.tdk.com/info/en/documents/chara_sheet/FG18X7R1H104KNT06.pdf" H 11170 5790 50  0001 C CNN
+F 4 "445-173265-1-ND" V 11170 5790 50  0001 C CNN "DigiKey"
+	1    11170 5790
+	1    0    0    1   
+$EndComp
+Wire Wire Line
+	10095 9275 10305 9275
+Wire Wire Line
+	8555 9475 8585 9475
+$Comp
+L Device:C_Small C12
+U 1 1 5C6FADC7
+P 7835 9300
+F 0 "C12" V 7655 9300 39  0000 C CNN
+F 1 "10µF" V 7715 9300 28  0000 C CNN
+F 2 "ibxlib:FG16" H 7835 9300 50  0001 C CNN
+F 3 "https://product.tdk.com/info/en/documents/chara_sheet/FG16X5R1H106KRT06.pdf" H 7835 9300 50  0001 C CNN
+F 4 "445-173153-1-ND" V 7835 9300 50  0001 C CNN "DigiKey"
+	1    7835 9300
+	1    0    0    1   
+$EndComp
+$Comp
+L Device:C_Small C14
+U 1 1 5C6FAEFD
+P 8030 9300
+F 0 "C14" V 7850 9300 39  0000 C CNN
+F 1 "10nF" V 7910 9300 28  0000 C CNN
+F 2 "ibxlib:FG18" H 8030 9300 50  0001 C CNN
+F 3 "https://product.tdk.com/info/en/documents/chara_sheet/FG18X7R1H103KNT06.pdf" H 8030 9300 50  0001 C CNN
+F 4 "445-173172-1-ND" V 8030 9300 50  0001 C CNN "DigiKey"
+	1    8030 9300
+	-1   0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR037
+U 1 1 5C7616B3
+P 8030 9400
+F 0 "#PWR037" H 8030 9150 50  0001 C CNN
+F 1 "GND" H 8035 9227 50  0000 C CNN
+F 2 "" H 8030 9400 50  0001 C CNN
+F 3 "" H 8030 9400 50  0001 C CNN
+	1    8030 9400
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	7835 9175 8030 9175
+Wire Wire Line
+	8030 9200 8030 9175
+Connection ~ 8030 9175
+Wire Wire Line
+	8030 9175 10305 9175
+$Comp
+L Device:C_Small C16
+U 1 1 5C7EAB3C
+P 8585 9620
+F 0 "C16" V 8405 9620 39  0000 C CNN
+F 1 "10µF" V 8465 9620 28  0000 C CNN
+F 2 "ibxlib:FG16" H 8585 9620 50  0001 C CNN
+F 3 "https://product.tdk.com/info/en/documents/chara_sheet/FG16X5R1H106KRT06.pdf" H 8585 9620 50  0001 C CNN
+F 4 "445-173153-1-ND" V 8585 9620 50  0001 C CNN "DigiKey"
+	1    8585 9620
+	1    0    0    1   
+$EndComp
+Wire Wire Line
+	8585 9475 8585 9520
+Connection ~ 8585 9475
+$Comp
+L Device:C_Small C17
+U 1 1 5C852BA1
+P 9120 9695
+F 0 "C17" V 8940 9695 39  0000 C CNN
+F 1 "10µF" V 9000 9695 28  0000 C CNN
+F 2 "ibxlib:FG16" H 9120 9695 50  0001 C CNN
+F 3 "https://product.tdk.com/info/en/documents/chara_sheet/FG16X5R1H106KRT06.pdf" H 9120 9695 50  0001 C CNN
+F 4 "445-173153-1-ND" V 9120 9695 50  0001 C CNN "DigiKey"
+	1    9120 9695
+	1    0    0    1   
+$EndComp
+Wire Wire Line
+	8990 9575 9120 9575
+$Comp
+L Device:C_Small C18
+U 1 1 5C8758E8
+P 9310 9695
+F 0 "C18" V 9130 9695 39  0000 C CNN
+F 1 "10nF" V 9190 9695 28  0000 C CNN
+F 2 "ibxlib:FG18" H 9310 9695 50  0001 C CNN
+F 3 "https://product.tdk.com/info/en/documents/chara_sheet/FG18X7R1H103KNT06.pdf" H 9310 9695 50  0001 C CNN
+F 4 "445-173172-1-ND" V 9310 9695 50  0001 C CNN "DigiKey"
+	1    9310 9695
+	-1   0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR045
+U 1 1 5C875AEA
+P 9310 9795
+F 0 "#PWR045" H 9310 9545 50  0001 C CNN
+F 1 "GND" H 9310 9640 50  0000 C CNN
+F 2 "" H 9310 9795 50  0001 C CNN
+F 3 "" H 9310 9795 50  0001 C CNN
+	1    9310 9795
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	9120 9595 9120 9575
+Connection ~ 9120 9575
+Wire Wire Line
+	9120 9575 9310 9575
+Wire Wire Line
+	9310 9575 9310 9595
+Connection ~ 9310 9575
+Wire Wire Line
+	9310 9575 10305 9575
+$Comp
+L power:GND #PWR040
+U 1 1 5C8BB328
+P 8585 9720
+F 0 "#PWR040" H 8585 9470 50  0001 C CNN
+F 1 "GND" H 8585 9565 50  0000 C CNN
+F 2 "" H 8585 9720 50  0001 C CNN
+F 3 "" H 8585 9720 50  0001 C CNN
+	1    8585 9720
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:C_Small C19
+U 1 1 5C8BBACC
+P 10380 8150
+F 0 "C19" V 10205 8150 39  0000 C CNN
+F 1 "100nF" V 10270 8150 28  0000 C CNN
+F 2 "ibxlib:FG18" H 10380 8150 50  0001 C CNN
+F 3 "https://product.tdk.com/info/en/documents/chara_sheet/FG18X7R1H104KNT06.pdf" H 10380 8150 50  0001 C CNN
+F 4 "445-173265-1-ND" V 10380 8150 50  0001 C CNN "DigiKey"
+	1    10380 8150
+	0    -1   1    0   
+$EndComp
+$Comp
+L Device:C_Small C13
+U 1 1 5C8DF1B4
+P 7920 2670
+F 0 "C13" V 7745 2670 39  0000 C CNN
+F 1 "100nF" V 7810 2670 28  0000 C CNN
+F 2 "ibxlib:FG18" H 7920 2670 50  0001 C CNN
+F 3 "https://product.tdk.com/info/en/documents/chara_sheet/FG18X7R1H104KNT06.pdf" H 7920 2670 50  0001 C CNN
+F 4 "445-173265-1-ND" V 7920 2670 50  0001 C CNN "DigiKey"
+	1    7920 2670
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:C_Small C11
+U 1 1 5C926FBF
+P 7010 6160
+F 0 "C11" V 6830 6160 39  0000 C CNN
+F 1 "2.2nF" V 6890 6160 28  0000 C CNN
+F 2 "ibxlib:FG18" H 7010 6160 50  0001 C CNN
+F 3 "https://product.tdk.com/info/en/documents/chara_sheet/FG18C0G1H222JNT06.pdf" H 7010 6160 50  0001 C CNN
+F 4 "445-173184-1-ND" V 7010 6160 50  0001 C CNN "DigiKey"
+	1    7010 6160
+	-1   0    0    1   
+$EndComp
+$Comp
+L power:-12V #PWR09
+U 1 1 5C9EDCD1
+P 3020 9640
+F 0 "#PWR09" H 3020 9740 50  0001 C CNN
+F 1 "-12V" H 3020 9795 50  0000 C CNN
+F 2 "" H 3020 9640 50  0001 C CNN
+F 3 "" H 3020 9640 50  0001 C CNN
+	1    3020 9640
+	-1   0    0    1   
+$EndComp
+$Comp
+L power:-12V #PWR011
+U 1 1 5C9EE132
+P 3040 7670
+F 0 "#PWR011" H 3040 7770 50  0001 C CNN
+F 1 "-12V" H 3040 7825 50  0000 C CNN
+F 2 "" H 3040 7670 50  0001 C CNN
+F 3 "" H 3040 7670 50  0001 C CNN
+	1    3040 7670
+	-1   0    0    1   
+$EndComp
+$Comp
+L power:+12V #PWR022
+U 1 1 5C9EE4AD
+P 4220 7570
+F 0 "#PWR022" H 4220 7420 50  0001 C CNN
+F 1 "+12V" H 4235 7743 50  0000 C CNN
+F 2 "" H 4220 7570 50  0001 C CNN
+F 3 "" H 4220 7570 50  0001 C CNN
+	1    4220 7570
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:+12V #PWR08
+U 1 1 5C9EE7BA
+P 3020 8300
+F 0 "#PWR08" H 3020 8150 50  0001 C CNN
+F 1 "+12V" H 3035 8473 50  0000 C CNN
+F 2 "" H 3020 8300 50  0001 C CNN
+F 3 "" H 3020 8300 50  0001 C CNN
+	1    3020 8300
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:C_Small C1
+U 1 1 5C9EEC80
+P 2840 8490
+AR Path="/5C9EEC80" Ref="C1"  Part="1" 
+AR Path="/5A35FA42/5C9EEC80" Ref="C?"  Part="1" 
+F 0 "C1" V 2660 8490 39  0000 C CNN
+F 1 "3.3µF" V 2720 8490 28  0000 C CNN
+F 2 "ibxlib:FG14" H 2840 8490 50  0001 C CNN
+F 3 "https://product.tdk.com/info/en/documents/chara_sheet/FG14X5R1H335KRT06.pdf" H 2840 8490 50  0001 C CNN
+F 4 "445-173130-1-ND" V 2840 8490 50  0001 C CNN "DigiKey"
+	1    2840 8490
+	0    1    1    0   
+$EndComp
+$Comp
+L Device:C_Small C2
+U 1 1 5C9EF57F
+P 2840 9450
+AR Path="/5C9EF57F" Ref="C2"  Part="1" 
+AR Path="/5A35FA42/5C9EF57F" Ref="C?"  Part="1" 
+F 0 "C2" V 2660 9450 39  0000 C CNN
+F 1 "3.3µF" V 2720 9450 28  0000 C CNN
+F 2 "ibxlib:FG14" H 2840 9450 50  0001 C CNN
+F 3 "https://product.tdk.com/info/en/documents/chara_sheet/FG14X5R1H335KRT06.pdf" H 2840 9450 50  0001 C CNN
+F 4 "445-173130-1-ND" V 2840 9450 50  0001 C CNN "DigiKey"
+	1    2840 9450
+	0    1    1    0   
+$EndComp
+$Comp
+L Device:R_Small R2
+U 1 1 5CA17AA7
+P 2535 6715
+AR Path="/5CA17AA7" Ref="R2"  Part="1" 
+AR Path="/5A35FA42/5CA17AA7" Ref="R?"  Part="1" 
+F 0 "R2" V 2455 6715 50  0000 C CNN
+F 1 "47k" V 2535 6715 35  0000 C CNN
+F 2 "ibxlib:Resistor" H 2535 6715 50  0001 C CNN
+F 3 "http://www.vishay.com/docs/28724/mrs16m25.pdf" H 2535 6715 50  0001 C CNN
+F 4 "BC4178CT-ND" V 2535 6715 50  0001 C CNN "DigiKey"
+	1    2535 6715
+	0    1    1    0   
+$EndComp
+$Comp
+L Device:R_Small R15
+U 1 1 5CA6EC20
+P 8920 4045
+AR Path="/5CA6EC20" Ref="R15"  Part="1" 
+AR Path="/5A35FA42/5CA6EC20" Ref="R?"  Part="1" 
+F 0 "R15" V 8840 4045 50  0000 C CNN
+F 1 "4k7" V 8920 4045 35  0000 C CNN
+F 2 "ibxlib:Resistor" H 8920 4045 50  0001 C CNN
+F 3 "http://www.vishay.com/docs/28724/mrs16m25.pdf" H 8920 4045 50  0001 C CNN
+F 4 "BC4176CT-ND" V 8920 4045 50  0001 C CNN "DigiKey"
+	1    8920 4045
+	-1   0    0    1   
+$EndComp
+$Comp
+L Device:R_Small R14
+U 1 1 5CAFC570
+P 8820 4045
+AR Path="/5CAFC570" Ref="R14"  Part="1" 
+AR Path="/5A35FA42/5CAFC570" Ref="R?"  Part="1" 
+F 0 "R14" V 8740 4045 50  0000 C CNN
+F 1 "4k7" V 8820 4045 35  0000 C CNN
+F 2 "ibxlib:Resistor" H 8820 4045 50  0001 C CNN
+F 3 "http://www.vishay.com/docs/28724/mrs16m25.pdf" H 8820 4045 50  0001 C CNN
+F 4 "BC4176CT-ND" V 8820 4045 50  0001 C CNN "DigiKey"
+	1    8820 4045
+	1    0    0    1   
+$EndComp
+$Comp
+L Device:R_Small R16
+U 1 1 5CB20724
+P 10015 6525
+AR Path="/5CB20724" Ref="R16"  Part="1" 
+AR Path="/5A35FA42/5CB20724" Ref="R?"  Part="1" 
+F 0 "R16" V 9935 6525 50  0000 C CNN
+F 1 "4k7" V 10015 6525 35  0000 C CNN
+F 2 "ibxlib:Resistor" H 10015 6525 50  0001 C CNN
+F 3 "http://www.vishay.com/docs/28724/mrs16m25.pdf" H 10015 6525 50  0001 C CNN
+F 4 "BC4176CT-ND" V 10015 6525 50  0001 C CNN "DigiKey"
+	1    10015 6525
+	0    -1   1    0   
+$EndComp
+$Comp
+L Device:R_Small R17
+U 1 1 5CB67C0F
+P 10045 9975
+AR Path="/5CB67C0F" Ref="R17"  Part="1" 
+AR Path="/5A35FA42/5CB67C0F" Ref="R?"  Part="1" 
+F 0 "R17" V 9965 9975 50  0000 C CNN
+F 1 "4k7" V 10045 9975 35  0000 C CNN
+F 2 "ibxlib:Resistor" H 10045 9975 50  0001 C CNN
+F 3 "http://www.vishay.com/docs/28724/mrs16m25.pdf" H 10045 9975 50  0001 C CNN
+F 4 "BC4176CT-ND" V 10045 9975 50  0001 C CNN "DigiKey"
+	1    10045 9975
+	1    0    0    1   
+$EndComp
+Wire Wire Line
+	2105 7805 2105 8930
+$Comp
+L Device:R_Small R1
+U 1 1 5CBF676D
+P 2105 6505
+AR Path="/5CBF676D" Ref="R1"  Part="1" 
+AR Path="/5A35FA42/5CBF676D" Ref="R?"  Part="1" 
+F 0 "R1" V 2025 6505 50  0000 C CNN
+F 1 "6k8" V 2105 6505 35  0000 C CNN
+F 2 "ibxlib:Resistor" H 2105 6505 50  0001 C CNN
+F 3 "http://www.vishay.com/docs/28724/mrs16m25.pdf" H 2105 6505 50  0001 C CNN
+F 4 "BC4239CT-ND" V 2105 6505 50  0001 C CNN "DigiKey"
+	1    2105 6505
+	-1   0    0    1   
+$EndComp
+$Comp
+L Device:R_Small R5
+U 1 1 5CC1A0DD
+P 4120 9340
+AR Path="/5CC1A0DD" Ref="R5"  Part="1" 
+AR Path="/5A35FA42/5CC1A0DD" Ref="R?"  Part="1" 
+F 0 "R5" V 4040 9340 50  0000 C CNN
+F 1 "6k8" V 4120 9340 35  0000 C CNN
+F 2 "ibxlib:Resistor" H 4120 9340 50  0001 C CNN
+F 3 "http://www.vishay.com/docs/28724/mrs16m25.pdf" H 4120 9340 50  0001 C CNN
+F 4 "BC4239CT-ND" V 4120 9340 50  0001 C CNN "DigiKey"
+	1    4120 9340
+	-1   0    0    1   
+$EndComp
+$Comp
+L Device:R_Small R3
+U 1 1 5CC1AAB2
+P 3830 9620
+AR Path="/5CC1AAB2" Ref="R3"  Part="1" 
+AR Path="/5A35FA42/5CC1AAB2" Ref="R?"  Part="1" 
+F 0 "R3" V 3750 9620 50  0000 C CNN
+F 1 "1k" V 3830 9620 35  0000 C CNN
+F 2 "ibxlib:Resistor" H 3830 9620 50  0001 C CNN
+F 3 "http://www.vishay.com/docs/28724/mrs16m25.pdf" H 3830 9620 50  0001 C CNN
+F 4 "PPC1.00KZCT-ND" V 3830 9620 50  0001 C CNN "DigiKey"
+	1    3830 9620
+	0    -1   -1   0   
+$EndComp
+$Comp
+L Device:R_Small R12
+U 1 1 5CC61C99
+P 8660 5960
+AR Path="/5CC61C99" Ref="R12"  Part="1" 
+AR Path="/5A35FA42/5CC61C99" Ref="R?"  Part="1" 
+F 0 "R12" V 8580 5960 50  0000 C CNN
+F 1 "4k7" V 8660 5960 35  0000 C CNN
+F 2 "ibxlib:Resistor" H 8660 5960 50  0001 C CNN
+F 3 "http://www.vishay.com/docs/28724/mrs16m25.pdf" H 8660 5960 50  0001 C CNN
+F 4 "BC4176CT-ND" V 8660 5960 50  0001 C CNN "DigiKey"
+	1    8660 5960
+	-1   0    0    -1  
+$EndComp
+$Comp
+L Device:R_Small R7
+U 1 1 5CC852AA
+P 4445 5820
+AR Path="/5CC852AA" Ref="R7"  Part="1" 
+AR Path="/5A35FA42/5CC852AA" Ref="R?"  Part="1" 
+F 0 "R7" V 4365 5820 50  0000 C CNN
+F 1 "100" V 4445 5820 35  0000 C CNN
+F 2 "ibxlib:Resistor" H 4445 5820 50  0001 C CNN
+F 3 "http://www.vishay.com/docs/28724/mrs16m25.pdf" H 4445 5820 50  0001 C CNN
+F 4 "BC3952CT-ND" V 4445 5820 50  0001 C CNN "DigiKey"
+	1    4445 5820
+	0    1    1    0   
+$EndComp
+$Comp
+L Device:R_Small R4
+U 1 1 5CC8545C
+P 3900 5320
+AR Path="/5CC8545C" Ref="R4"  Part="1" 
+AR Path="/5A35FA42/5CC8545C" Ref="R?"  Part="1" 
+F 0 "R4" V 3820 5320 50  0000 C CNN
+F 1 "510" V 3900 5320 35  0000 C CNN
+F 2 "ibxlib:Resistor" H 3900 5320 50  0001 C CNN
+F 3 "http://www.vishay.com/docs/28724/mrs16m25.pdf" H 3900 5320 50  0001 C CNN
+F 4 "BC4190CT-ND" V 3900 5320 50  0001 C CNN "DigiKey"
+	1    3900 5320
+	-1   0    0    1   
+$EndComp
+$Comp
+L Device:R_Small R8
+U 1 1 5CC855E0
+P 4885 4690
+AR Path="/5CC855E0" Ref="R8"  Part="1" 
+AR Path="/5A35FA42/5CC855E0" Ref="R?"  Part="1" 
+F 0 "R8" V 4805 4690 50  0000 C CNN
+F 1 "330" V 4885 4690 35  0000 C CNN
+F 2 "ibxlib:Resistor" H 4885 4690 50  0001 C CNN
+F 3 "http://www.vishay.com/docs/28724/mrs16m25.pdf" H 4885 4690 50  0001 C CNN
+F 4 "BC4123CT-ND" V 4885 4690 50  0001 C CNN "DigiKey"
+	1    4885 4690
+	0    1    1    0   
+$EndComp
+$Comp
+L Device:R_Small R6
+U 1 1 5CC85790
+P 4300 8235
+AR Path="/5CC85790" Ref="R6"  Part="1" 
+AR Path="/5A35FA42/5CC85790" Ref="R?"  Part="1" 
+F 0 "R6" V 4220 8235 50  0000 C CNN
+F 1 "200" V 4300 8235 35  0000 C CNN
+F 2 "ibxlib:Resistor" H 4300 8235 50  0001 C CNN
+F 3 "http://www.vishay.com/docs/28724/mrs16m25.pdf" H 4300 8235 50  0001 C CNN
+F 4 "BC4039CT-ND" V 4300 8235 50  0001 C CNN "DigiKey"
+	1    4300 8235
+	0    1    1    0   
+$EndComp
+$Comp
+L Device:R_Small R18
+U 1 1 5CC85D5F
+P 10095 9375
+AR Path="/5CC85D5F" Ref="R18"  Part="1" 
+AR Path="/5A35FA42/5CC85D5F" Ref="R?"  Part="1" 
+F 0 "R18" V 10015 9375 50  0000 C CNN
+F 1 "49.9" V 10095 9375 35  0000 C CNN
+F 2 "ibxlib:Resistor" H 10095 9375 50  0001 C CNN
+F 3 "http://www.vishay.com/docs/28724/mrs16m25.pdf" H 10095 9375 50  0001 C CNN
+F 4 "BC4639CT-ND" V 10095 9375 50  0001 C CNN "DigiKey"
+	1    10095 9375
+	-1   0    0    1   
+$EndComp
+Wire Wire Line
+	7770 3820 9020 3820
+$Comp
+L Device:R_Small R11
+U 1 1 5CCCD7C8
+P 7710 5720
+AR Path="/5CCCD7C8" Ref="R11"  Part="1" 
+AR Path="/5A35FA42/5CCCD7C8" Ref="R?"  Part="1" 
+F 0 "R11" V 7630 5720 50  0000 C CNN
+F 1 "100" V 7710 5720 35  0000 C CNN
+F 2 "ibxlib:Resistor" H 7710 5720 50  0001 C CNN
+F 3 "http://www.vishay.com/docs/28724/mrs16m25.pdf" H 7710 5720 50  0001 C CNN
+F 4 "BC3952CT-ND" V 7710 5720 50  0001 C CNN "DigiKey"
+	1    7710 5720
+	0    1    1    0   
+$EndComp
+$Comp
+L Device:R_Small R9
+U 1 1 5CCCDE8D
+P 5550 7105
+AR Path="/5CCCDE8D" Ref="R9"  Part="1" 
+AR Path="/5A35FA42/5CCCDE8D" Ref="R?"  Part="1" 
+F 0 "R9" V 5470 7105 50  0000 C CNN
+F 1 "100" V 5550 7105 35  0000 C CNN
+F 2 "ibxlib:Resistor" H 5550 7105 50  0001 C CNN
+F 3 "http://www.vishay.com/docs/28724/mrs16m25.pdf" H 5550 7105 50  0001 C CNN
+F 4 "BC3952CT-ND" V 5550 7105 50  0001 C CNN "DigiKey"
+	1    5550 7105
+	-1   0    0    1   
+$EndComp
+Wire Wire Line
+	8585 9475 10095 9475
+Connection ~ 10095 9475
+Wire Wire Line
+	10095 9475 10305 9475
+$Comp
+L Device:R_Small R19
+U 1 1 5CD15494
+P 10135 9975
+AR Path="/5CD15494" Ref="R19"  Part="1" 
+AR Path="/5A35FA42/5CD15494" Ref="R?"  Part="1" 
+F 0 "R19" V 10055 9975 50  0000 C CNN
+F 1 "49.9" V 10135 9975 35  0000 C CNN
+F 2 "ibxlib:Resistor" H 10135 9975 50  0001 C CNN
+F 3 "http://www.vishay.com/docs/28724/mrs16m25.pdf" H 10135 9975 50  0001 C CNN
+F 4 "BC4639CT-ND" V 10135 9975 50  0001 C CNN "DigiKey"
+	1    10135 9975
+	-1   0    0    1   
+$EndComp
+$Comp
+L Device:R_Small R13
+U 1 1 5CD1CA20
+P 8800 5620
+AR Path="/5CD1CA20" Ref="R13"  Part="1" 
+AR Path="/5A35FA42/5CD1CA20" Ref="R?"  Part="1" 
+F 0 "R13" V 8720 5620 50  0000 C CNN
+F 1 "10k" V 8800 5620 35  0000 C CNN
+F 2 "ibxlib:Resistor" H 8800 5620 50  0001 C CNN
+F 3 "http://www.vishay.com/docs/28724/mrs16m25.pdf" H 8800 5620 50  0001 C CNN
+F 4 "PPC10.0KZCT-ND" V 8800 5620 50  0001 C CNN "DigiKey"
+	1    8800 5620
+	0    1    1    0   
+$EndComp
+$Comp
+L Device:R_Small R10
+U 1 1 5CD3FECD
+P 6765 5720
+AR Path="/5CD3FECD" Ref="R10"  Part="1" 
+AR Path="/5A35FA42/5CD3FECD" Ref="R?"  Part="1" 
+F 0 "R10" V 6685 5720 50  0000 C CNN
+F 1 "10k" V 6765 5720 35  0000 C CNN
+F 2 "ibxlib:Resistor" H 6765 5720 50  0001 C CNN
+F 3 "http://www.vishay.com/docs/28724/mrs16m25.pdf" H 6765 5720 50  0001 C CNN
+F 4 "PPC10.0KZCT-ND" V 6765 5720 50  0001 C CNN "DigiKey"
+	1    6765 5720
+	0    1    1    0   
+$EndComp
+$Comp
+L Device:Polyfuse_Small F1
+U 1 1 5CD88E98
+P 1495 1320
+F 0 "F1" V 1450 1145 50  0000 L CNN
+F 1 "HC:250mA" V 1563 1275 50  0000 C CNN
+F 2 "Fuse:Fuse_Littelfuse_395Series" H 1545 1120 50  0001 L CNN
+F 3 "https://product.tdk.com/info/en/documents/data_sheet/55/db/PTC/PTC_OC_Leaded_12V_24V_C935_C995.pdf" H 1495 1320 50  0001 C CNN
+F 4 "495-3904-ND" V 1495 1320 50  0001 C CNN "DigiKey"
+	1    1495 1320
+	1    0    0    -1  
+$EndComp
+$Comp
+L 74xx:7400 U6
+U 5 1 5CD8DEFC
+P 13870 7370
+F 0 "U6" H 13755 7425 50  0000 L CNN
+F 1 "74HCT00" H 13700 7330 50  0000 L CNN
+F 2 "ibxlib:DIP-14" H 13870 7370 50  0001 C CNN
+F 3 "http://www.ti.com/lit/ds/symlink/cd74hc00.pdf" H 13870 7370 50  0001 C CNN
+F 4 "296-2081-5-ND" H 13870 7370 50  0001 C CNN "DigiKey"
+	5    13870 7370
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:D_Schottky_Small D1
+U 1 1 5CDB8F76
+P 3630 9280
+F 0 "D1" V 3584 9348 50  0000 L CNN
+F 1 "SD103A" V 3675 9348 50  0000 L CNN
+F 2 "Diode_THT:D_DO-35_SOD27_P7.62mm_Horizontal" V 3630 9280 50  0001 C CNN
+F 3 "http://www.vishay.com/docs/85754/sd103a.pdf" V 3630 9280 50  0001 C CNN
+F 4 "SD103AVSCT-ND" H 3630 9280 50  0001 C CNN "DigiKey"
+	1    3630 9280
+	0    1    1    0   
+$EndComp
+$Comp
+L Device:D_Schottky_Small D3
+U 1 1 5CE447EF
+P 4320 9030
+F 0 "D3" H 4320 8825 50  0000 C CNN
+F 1 "SD103A" H 4320 8916 50  0000 C CNN
+F 2 "Diode_THT:D_DO-35_SOD27_P7.62mm_Horizontal" V 4320 9030 50  0001 C CNN
+F 3 "http://www.vishay.com/docs/85754/sd103a.pdf" V 4320 9030 50  0001 C CNN
+F 4 "SD103AVSCT-ND" H 4320 9030 50  0001 C CNN "DigiKey"
+	1    4320 9030
+	-1   0    0    1   
+$EndComp
+$Comp
+L Device:C_Small C6
+U 1 1 5CE46C87
+P 3520 6140
+F 0 "C6" V 3350 6140 39  0000 C CNN
+F 1 "100nF" V 3410 6140 28  0000 C CNN
+F 2 "ibxlib:FG18" H 3520 6140 50  0001 C CNN
+F 3 "https://product.tdk.com/info/en/documents/chara_sheet/FG18X7R1H104KNT06.pdf" H 3520 6140 50  0001 C CNN
+F 4 "445-173265-1-ND" V 3520 6140 50  0001 C CNN "DigiKey"
+	1    3520 6140
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	3370 6140 3370 6210
+$Comp
+L Device:C_Small C5
+U 1 1 5CE8D161
+P 3520 5265
+F 0 "C5" V 3350 5265 39  0000 C CNN
+F 1 "100nF" V 3410 5265 28  0000 C CNN
+F 2 "ibxlib:FG18" H 3520 5265 50  0001 C CNN
+F 3 "https://product.tdk.com/info/en/documents/chara_sheet/FG18X7R1H104KNT06.pdf" H 3520 5265 50  0001 C CNN
+F 4 "445-173265-1-ND" V 3520 5265 50  0001 C CNN "DigiKey"
+	1    3520 5265
+	0    1    1    0   
+$EndComp
+$Comp
+L power:GND #PWR049
+U 1 1 5C59BB3D
+P 10235 4850
+F 0 "#PWR049" H 10235 4600 50  0001 C CNN
+F 1 "GND" H 10240 4677 50  0000 C CNN
+F 2 "" H 10235 4850 50  0001 C CNN
+F 3 "" H 10235 4850 50  0001 C CNN
+	1    10235 4850
+	1    0    0    -1  
+$EndComp
+$Comp
+L Connector:TestPoint TP9
+U 1 1 5C59BD9D
+P 10235 4850
+F 0 "TP9" V 10183 5038 50  0000 L CNN
+F 1 "DebGND" V 10281 5038 50  0000 L CNN
+F 2 "ibxlib:TP" H 10435 4850 50  0001 C CNN
+F 3 "~" H 10435 4850 50  0001 C CNN
+F 4 "36-5001-ND" V 10235 4850 50  0001 C CNN "DigiKey"
+	1    10235 4850
+	1    0    0    -1  
+$EndComp
+$Comp
+L Connector:TestPoint TP10
+U 1 1 5C59C23D
+P 10650 4845
+F 0 "TP10" V 10598 5033 50  0000 L CNN
+F 1 "DebGND" V 10696 5033 50  0000 L CNN
+F 2 "ibxlib:TP" H 10850 4845 50  0001 C CNN
+F 3 "~" H 10850 4845 50  0001 C CNN
+F 4 "36-5001-ND" V 10650 4845 50  0001 C CNN "DigiKey"
+	1    10650 4845
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR051
+U 1 1 5C59C35B
+P 10650 4845
+F 0 "#PWR051" H 10650 4595 50  0001 C CNN
+F 1 "GND" H 10655 4672 50  0000 C CNN
+F 2 "" H 10650 4845 50  0001 C CNN
+F 3 "" H 10650 4845 50  0001 C CNN
+	1    10650 4845
+	1    0    0    -1  
+$EndComp
+NoConn ~ 3095 3145
+Wire Bus Line
+	7770 3520 8670 3520
+Wire Bus Line
+	4745 1270 6245 1270
+Wire Bus Line
+	12155 7325 12155 9875
+Wire Bus Line
+	11605 6050 11605 7325
+Wire Bus Line
+	4545 3445 6095 3445
+$EndSCHEMATC
