@@ -1,6 +1,6 @@
-# IBX || Software
+# IBX II Software
 
-This is the Software for the Information Barrier Experimental ||. IBX || is an information barrier setup for nuclear warhead verification with an Apple IIe ([Details](http://www.vintageverification.org)). An early version was presented at [34C3](https://media.ccc.de/v/34c3-8994-vintage_computing_for_trusted_radiation_measurements_and_a_world_free_of_nuclear_weapons).
+This is the Software for the Information Barrier Experimental II. IBX II is an information barrier setup for nuclear warhead verification with an Apple IIe ([Details](http://www.vintageverification.org)). An early version was presented at [34C3](https://media.ccc.de/v/34c3-8994-vintage_computing_for_trusted_radiation_measurements_and_a_world_free_of_nuclear_weapons).
 
 ## Assemble
 

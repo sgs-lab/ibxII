@@ -1,6 +1,6 @@
-# IBX ]\[ Hardware
+# IBX II Hardware
 
-IBX ]\[ is an information barrier setup for nuclear warhead verification with an Apple II ([Details](http://www.vintageverification.org)).
+IBX II is an information barrier setup for nuclear warhead verification with an Apple II ([Details](http://www.vintageverification.org)).
 This repository contains schematics and layout files for two custom Apple II peripheral cards.
 
 The KiCad files use the [Apple \]\[ Edge Connector Template](http://www.xjmaas.nl/my-apple-collection/apple-edge-connector-template-for-kicad/), best place it inside the directory as (Apple2_Bus).
