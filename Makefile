@@ -12,6 +12,7 @@ screenib:
 	ca65 -t apple2 hvon.s -o hvon.o
 	ld65 -o hvon.bin hvon.o -C apple2.cfg
 	dos33 ibxII.dsk SAVE B hvon.bin HVON
+	rm ibxII_loader
 
 withspectrum:
 	cp cc65.dsk ibxII-D.dsk
@@ -27,6 +28,7 @@ withspectrum:
 	ca65 -t apple2 hvon.s -o hvon.o
 	ld65 -o hvon.bin hvon.o -C apple2.cfg
 	dos33 ibxII-D.dsk SAVE B hvon.bin HVON
+	rm ibxII_loader
 
 measure:
 	cp cc65.dsk ibxII-M.dsk
@@ -42,8 +44,11 @@ measure:
 	ld65 -o hvon.bin hvon.o -C apple2.cfg
 	dos33 ibxII-M.dsk SAVE B hvon.bin HVON
 	dsk2nib ibxII-M.dsk ibxII-M.nib
+	rm ibxII_loader
 
 clean:
 	rm -f ibxII_loader
 	rm -f ibxII.o ibxII.bin ibxII.dsk 
+	rm -f ibxII-D.o ibxII-D.bin ibxII-D.dsk 
+	rm -f ibxII-M.o ibxII-M.bin ibxII-M.dsk ibxII-M.nib
 
