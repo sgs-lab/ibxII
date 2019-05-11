@@ -1,0 +1,46 @@
+20 ONERR GOTO 500
+30 PRINT CHR$(4); "BLOAD MEAS, A$8703"
+40 PRINT "Ongoing Measurement. "
+50 COUNT=PEEK(34565)
+60 TI=PEEK(34563)
+70 NO=PEEK(34564)
+90 SC$ = "BSAVE M"
+100 NC = COUNT
+110 DIV = 100
+120 SC$ = SC$ + CHR$(176 + INT(NC / DIV))
+125 NC = NC - INT(NC / DIV) * DIV
+130 DIV = INT(DIV / 10)
+140 IF DIV >= 1 GOTO 120
+150 L$ = SC$ + ", A$8000,L1024"
+151 PRINT L$
+152 PRINT CHR$(4);L$
+180 GOTO 600
+
+
+500 PRINT "|=====================================|"
+501 PRINT "|    Welcome to IBX II Measurements   |"
+502 PRINT "|=====================================|"
+503 PRINT "New measurement series."
+504 PRINT "Need some input."
+510 PRINT "How many measurements? (<=75)"
+511 INPUT NO
+520 PRINT "How many counts per measurement"
+530 PRINT "(Multiples of 2^16 / 65536)"
+531 INPUT TI
+540 PRINT "Danke. Will start measurement now!"
+550 POKE 34563, TI
+561 POKE 34564, NO
+562 POKE 34565, 0
+570 PRINT CHR$(4); "BSAVE MEAS,A34563,L3"
+580 COUNT = 0
+
+600 IF COUNT = NO THEN GOTO 1000
+610 COUNT = COUNT + 1
+620 POKE 34565, COUNT
+630 PRINT CHR$(4); "BSAVE MEAS,A34563,L3"
+640 PRINT "Starting Measurement #" COUNT
+650 PRINT TI " x 65536 counts"
+660 PRINT CHR$(4); "BRUN IBXII-M"
+
+1000 PRINT "Series of Measurements done."
+1100 PRINT CHR$(4); "DELETE MEAS"
