@@ -1,3 +1,5 @@
 /ibxII128.o
 /ibxII128_loader
 /ibxII128.bin
+*.o
+*.bin
