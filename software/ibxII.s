@@ -91,24 +91,36 @@ CHIS:    .RES 8
         ;; Memory addresses
         ;; --------------------------------------------------------------------------------
         
-        ;; Some memory for operation
+        ;; Larger Buffers
+        
+        ;; Measurement data
         memorylowbyte = $8000    
         memoryhighbyte = $8100
+
+        ;; Keep raw measurement
         originalresultlowbyte = $8200
         originalresulthighbyte = $8300
+
+        ;; Calibration result
         calibrationbufferlowbyte = $8400
         calibrationbufferhighbyte = $8500
+
+        ;; one buffer for plot values
         plotbuffer = $8600
+
+        ;; $8700 page is used for some non zero page variables
         hvstatus = $8700
         hvlevel = $8701
         pc = $8702
         limit = $8703             ;limit stored in memory at 8703
         ;; need limit + 2 additional bytes free for plain measurement basic script
-
-        bisect_s = $8750
-        bisect_h = $8752        ;h is the half width of current operation
-        bisect_c = $8754
-        bisect_cc = $8756
+        rawlowerchannelpointer = $8706
+        resultlowerchannelpointer = $8707
+        
+        bisect_s = $8710
+        bisect_h = $8712        ;h is the half width of current operation
+        bisect_c = $8714
+        bisect_cc = $8716
         
         ;; Memory in Zero Page
         buffer = $40
@@ -147,22 +159,29 @@ CHIS:    .RES 8
         LDA #$00
         STA hvstatus
         STA hvlevel
+
+;;; BEGIN: Set limit/lower channel in memory based on configuration
+;;; For all modes except measurement
+.ifndef MEASUREONLY        
         LDA #templatelimit
         STA limit
+        LDA #rawlowerchannel
+        STA rawlowerchannelpointer
+        LDA #resultlowerchannel
+        STA resultlowerchannelpointer
+.endif
+;;; END: Set limit/lower channel
 
 ;;; BEGIN: Only for Measurements
 .ifdef MEASUREONLY
+
         JSR MEASURE
         JSR BACKUP
 
-;;; set last channel to zero
-        LDX #255
-        LDA #0
-        STA memoryhighbyte, X
-        STA memorylowbyte, X
-
+        JSR MASKRAWSPECTRUM
         JSR CALIBRATE
         JSR LOOKUP
+        JSR MASKRESULTSPECTRUM
 
         JMP $FAA6               ;'cold' start. reboots apple, but does not overwrite memory content
 .endif
@@ -498,6 +517,9 @@ CHPLOT:
         LDA #plotevery
         AND totcount1         ; Plot whenever totcount1 AND plotevery returns zero
         BNE NOPLOT
+
+        JSR MASKRAWSPECTRUM
+        
         JSR PLBFS
         JSR DRAWS
 NOPLOT:
@@ -512,10 +534,13 @@ CTDONE:
         JMP RSADC
 ENDREC:
 ;;; end of main readout loop
+
         
 ;;; BEGIN: Only for Demo (with screen)
 .ifdef DEMO
         ;; one more plot
+        
+        JSR MASKRAWSPECTRUM
         JSR PLBFS
         JSR DRAWS
         
@@ -546,8 +571,11 @@ TEMPLATE:
         STA memorylowbyte, X
 
         JSR BACKUP
+        JSR MASKRAWSPECTRUM
         JSR CALIBRATE
         JSR LOOKUP
+        JSR MASKRESULTSPECTRUM
+
 .ifdef DEMO
         ;; Prepare output
         JSR $F3E2               ; HGR
@@ -601,8 +629,10 @@ INSPECT:
         STA memorylowbyte, X
 
         JSR BACKUP
+        JSR MASKRAWSPECTRUM
         JSR CALIBRATE
         JSR LOOKUP
+        JSR MASKRESULTSPECTRUM
         
 .ifdef DEMO
         ;; Prepare output
@@ -1748,12 +1778,64 @@ ploop:  space
 ;;; END: Only for Demo (with screen)
 
 ;;; --------------------------------------------------------------------------------
+;;; SUBROUTINE MASKRAWSPECTRUM
+;;; sets last channel to zero --> collects all pulses >= last channel energy
+;;; sets an adjustable number of low channels to zero
+;;; --------------------------------------------------------------------------------
+MASKRAWSPECTRUM:
+                
+;;; set last channel to zero
+        LDX #255
+        LDA #0
+        STA memoryhighbyte, X
+        STA memorylowbyte, X
+
+;;; set channels up to rawlowerchannel to zero
+        LDX rawlowerchannelpointer
+        
+        LDA #0
+        DEX
+FIRSTZ: 
+        STA memoryhighbyte, X
+        STA memorylowbyte, X
+        DEX
+        BPL FIRSTZ              ; Loop for X >= 0
+
+        RTS
+
+;;; --------------------------------------------------------------------------------
+;;; SUBROUTINE MASKRESULTSPECTRUM
+;;; sets an adjustable number of low channels to zero
+;;; --------------------------------------------------------------------------------
+MASKRESULTSPECTRUM:
+;;; set last channel to zero
+        LDX #255
+        LDA #0
+        STA memoryhighbyte, X
+        STA memorylowbyte, X
+
+;;; set channels up to rawlowerchannel to zero
+        LDX resultlowerchannelpointer
+        
+        LDA #0
+        DEX
+@RESFIR:
+        STA memoryhighbyte, X
+        STA memorylowbyte, X
+        DEX
+        BPL @RESFIR              ; Loop for X >= 0
+
+        RTS
+
+;;; --------------------------------------------------------------------------------
 ;;; SUBROUTINE CALIBRATE
 ;;; adjusts spectrum so that the peak found in actualpeak will be in the channel
 ;;; number stored in 'peak'
 ;;; --------------------------------------------------------------------------------
 
 CALIBRATE:
+
+        
 ;;;     Move data to calibrationbuffer and set data to 0
         LDX #0
 MOVECLEAR:      

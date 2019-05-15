@@ -26,6 +26,14 @@ halfwidth = 8
 ;; Count limit for template / inspection
 templatelimit = $02
 ;; (reference is totcount2, so total count isi templatelimit * 65536)
+;;
+;; First Channel of Raw Data that is used, all other channels are discarded
+;; except for the storage of original spectra (measurement mode)
+rawlowerchannel = 0
+;;
+;; First Channel of calibrated/lookup data that is used
+resultlowerchannel = 13
+;; 13 is first channel > 150keV with current lookup table
 ;; 
 ;; Threshold for pass/fail (pass when chisquare < passthreshold)
 passthreshold = $30
