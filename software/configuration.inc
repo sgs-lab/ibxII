@@ -16,11 +16,11 @@ peak = 226
 ;; (226 is in center of 11th bin (215,237))
 ;;
 ;; Where should we look for the 2.614 MeV peak?
-regionmin = 218
-regionmax = 240
+regionmin = 214
+regionmax = 236
 ;;
 ;; Assumed half-width of peak
-halfwidth = 8
+halfwidth = 6
 ;;
 ;; Measurement
 ;; Count limit for template / inspection
@@ -33,7 +33,7 @@ rawlowerchannel = 0
 ;;
 ;; First Channel of calibrated/lookup data that is used
 resultlowerchannel = 13
-;; 13 is first channel > 150keV with current lookup table
+;; 13 is first channel > 150keV when calibrating for 2614.511 in channel 226
 ;; 
 ;; Threshold for pass/fail (pass when chisquare < passthreshold)
 passthreshold = $30
