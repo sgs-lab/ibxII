@@ -44,11 +44,17 @@
 
 .macro waitforkey
 .scope
+        PHA
+        TXA
+        PHA
 @WK:    LDA #$80
         AND $C000
         BEQ @WK
         LDA $C000
         LDX $C010
+        PLA
+        TAX
+        PLA
 .endscope
 .endmacro
 
@@ -110,7 +116,7 @@
 
 .macro space
         PHA
-        LDA #$A0                ; next line
+        LDA #$A0                ; space char
         JSR $FDED               ; cout
         PLA
 .endmacro
