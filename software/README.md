@@ -2,6 +2,8 @@
 
 This is the Software for the Information Barrier Experimental II. IBX II is an information barrier setup for nuclear warhead verification with an Apple IIe ([Details](http://www.vintageverification.org)). An early version was presented at [34C3](https://media.ccc.de/v/34c3-8994-vintage_computing_for_trusted_radiation_measurements_and_a_world_free_of_nuclear_weapons).
 
+A [second repository](https://github.com/sgs-lab/ibxII-measurements) holds the measurement data and related read-out scripts that where used to create the current lookup table.
+
 ## Assemble
 
 The software is written in 6502 assembler, and can be assembled using the [ca65 assembler](http://www.cc65.org).
@@ -15,3 +17,4 @@ After installing prerequisites, the included makefile allows for compilation of 
 ## Running the disks
 
 The disks are programmed to read and write memory positions associated to the extension cards. An emulator will most likely not work (or not give expected results).
+
